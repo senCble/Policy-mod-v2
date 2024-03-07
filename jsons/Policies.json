@@ -117,7 +117,7 @@
                     "Each city founded increases culture cost of policies [33]% less than normal",
                     "Empire enters golden age"
                 ],
-                "requires": ["Citizenship"],
+                "requires": ["Republic"],
                 "row": 2,
                 "column": 3
             },
@@ -127,7 +127,7 @@
                     "[+1 Happiness] [in all cities connected to capital]",
                     "[-5]% Unhappiness from [Population] [in all non-occupied cities]"
                 ],
-                "requires": ["Citizenship"],
+                "requires": ["Republic"],
                 "row": 2,
                 "column": 5
             },
