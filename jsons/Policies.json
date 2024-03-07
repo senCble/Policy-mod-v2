@@ -706,9 +706,9 @@
         "name": "Freedom",
         "era": "Industrial era",
         "priorities": {
-            "Neutral": 40,
-            "Cultural": 70,
-            "Diplomatic": 40,
+            "Neutral": 50,
+            "Cultural": 60,
+            "Diplomatic": 50,
             "Domination": 40,
             "Scientific": 50
         },
@@ -764,7 +764,7 @@
         "name": "Autocracy",
         "era": "Industrial era",
         "priorities": {
-            "Neutral": 40,
+            "Neutral": 50,
             "Cultural": 40,
             "Diplomatic": 40,
             "Domination": 80,
@@ -835,7 +835,7 @@
         "name": "Order",
         "era": "Industrial era",
         "priorities": {
-            "Neutral": 40,
+            "Neutral": 50,
             "Cultural": 40,
             "Diplomatic": 60,
             "Domination": 40,
