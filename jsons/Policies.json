@@ -316,7 +316,7 @@
             {
                 "name": "Scholasticism",
                 "uniques": [
-                    "Allied City-States provide [Science] equal to [100]% of what they produce for themselves"
+                    "Allied City-States provide [Science] equal to [50]% of what they produce for themselves"
                 ],
                 "requires": ["Philantropy"],
                 "row": 2,
@@ -392,10 +392,8 @@
             {
                 "name": "Tourism Destination",
                 "uniques": [
-                    "[100]% of excess happiness converted to [Science]",
-                    "[100]% of excess happiness converted to [Culture]",
-                    "[100]% of excess happiness converted to [Gold]",
-                    "[100]% of excess happiness converted to [Faith]",
+                    "[50]% of excess happiness converted to [Science]",
+                    "[50]% of excess happiness converted to [Culture]",
                 ],
                 "requires": ["Cultural Centers", "Monumentality"],
                 "row": 2,
@@ -413,7 +411,7 @@
             {
                 "name": "Aesthetics Complete",
                 "uniques": [
-                    "[+2 Production, +2 Food] [in all cities with a world wonder]",
+                    "[+25]% [Culture] [in all cities with a world wonder]",
                     "May buy [Great Artist] units for [1000] [Faith] [in all cities in which the majority religion is a major religion] at an increasing price ([500]) <starting from the [Industrial era]>"
                 ]
             }
@@ -481,8 +479,9 @@
             {
                 "name": "Commerce Complete",
                 "uniques": [
-                    "[+1 Gold] from every [Trading post]",
-                    "May buy [Great Merchant] units for [1000] [Faith] [in all cities in which the majority religion is a major religion] at an increasing price ([500]) <starting from the [Industrial era]>"
+                    	"[+1 Gold] from every [Trading post]",
+			"[+1 Gold] from every [Specialist]"
+                    	"May buy [Great Merchant] units for [1000] [Faith] [in all cities in which the majority religion is a major religion] at an increasing price ([500]) <starting from the [Industrial era]>"
                 ]
             }
         ]
@@ -649,7 +648,7 @@
             "Scientific": 60
         },
         "uniques": [
-            "[+15]% [Science] <while the empire is happy>"
+            "[+10]% [Science] <while the empire is happy>"
                 ],
         "policies": [
             {
@@ -697,7 +696,7 @@
             {
                 "name": "Rationalism Complete",
                 "uniques": [
-                    "[2] Free Technologies",
+                    "[1] Free Technologies",
                     "May buy [Great Scientist] units for [1000] [Faith] [in all cities in which the majority religion is a major religion] at an increasing price ([500]) <starting from the [Industrial era]>"
                 ]
             }
