@@ -378,7 +378,8 @@
             {
                 "name": "Monumentality",
                 "uniques": [
-                    "[+50]% Golden Age length"
+                    "[+50]% Golden Age length",
+		    "Empire enters golden age"
                 ],
                 "row": 1,
                 "column": 5
