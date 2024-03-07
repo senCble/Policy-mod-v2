@@ -243,7 +243,7 @@
                 "uniques": [
                     "[Faith] cost of purchasing items in cities [-20]%",
                     "[+1 Happiness] from every [Temple]",
-		    "[+2 Happiness] from every [Grand Temple]"
+		    "[+1 Happiness] from every [Grand Temple]"
                 ],
                 "row": 1,
                 "column": 5
