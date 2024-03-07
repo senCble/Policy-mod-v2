@@ -6,8 +6,8 @@
         "era": "Ancient era",
         "priorities": {
             "Neutral": 0,
-            "Cultural": 10,
-            "Diplomatic": 0,
+            "Cultural": 20,
+            "Diplomatic": 10,
             "Domination": 0,
             "Scientific": 10
         },
@@ -144,7 +144,7 @@
             "Neutral": 0,
             "Cultural": 0,
             "Diplomatic": 10,
-            "Domination": 10,
+            "Domination": 30,
             "Scientific": 0
         },
         "uniques": [
@@ -162,7 +162,7 @@
 			"[+100]% Production when constructing [Military Academy] wonders [in all cities]"
                 ],
                 "row": 1,
-                "column": 2
+                "column": 4
             },
             {
                 "name": "Discipline",
@@ -171,14 +171,14 @@
 			"Free [Great General] appears"
                 ],
                 "row": 1,
-                "column": 4
+                "column": 2
             },
             {
                 "name": "Military Tradition",
                 "uniques": [
                     "[+50]% XP gained from combat <for [Military] units>",
                 ],
-                "requires": ["Warrior Code"],
+                "requires": ["Discipline"],
                 "row": 2,
                 "column": 2
             },
@@ -187,7 +187,7 @@
                 "uniques": [
                     "[+2 Happiness, +2 Culture] [in all cities with a garrison]"
                 ],
-                "requires": ["Discipline"],
+                "requires": ["Warrior Code"],
                 "row": 2,
                 "column": 4
             },
@@ -215,7 +215,7 @@
         "name": "Piety",
         "era": "Ancient era",
         "priorities": {
-            "Neutral": 0,
+            "Neutral": 10,
             "Cultural": 10,
             "Diplomatic": 10,
             "Domination": 10,
@@ -291,7 +291,7 @@
         "priorities": {
             "Neutral": 0,
             "Cultural": 10,
-            "Diplomatic": 20,
+            "Diplomatic": 30,
             "Domination": 0,
             "Scientific": 10
         },
@@ -357,7 +357,7 @@
         "era": "Classical era",
         "priorities": {
             "Neutral": 0,
-            "Cultural": 10,
+            "Cultural": 40,
             "Diplomatic": 0,
             "Domination": 0,
             "Scientific": 10
@@ -494,7 +494,7 @@
             "Neutral": 0,
             "Cultural": 0,
             "Diplomatic": 0,
-            "Domination": 10,
+            "Domination": 15,
             "Scientific": 10
         },
         "uniques": [
@@ -566,7 +566,7 @@
         "priorities": {
             "Neutral": 10,
             "Cultural": 0,
-            "Diplomatic": 10,
+            "Diplomatic": 15,
             "Domination": 0,
             "Scientific": 0
         },
@@ -642,7 +642,7 @@
         "name": "Rationalism",
         "era": "Renaissance era",
         "priorities": {
-            "Neutral": 0,
+            "Neutral": 10,
             "Cultural": 10,
             "Diplomatic": 10,
             "Domination": 10,
@@ -707,9 +707,9 @@
         "name": "Freedom",
         "era": "Industrial era",
         "priorities": {
-            "Neutral": 50,
-            "Cultural": 50,
-            "Diplomatic": 50,
+            "Neutral": 40,
+            "Cultural": 70,
+            "Diplomatic": 40,
             "Domination": 40,
             "Scientific": 50
         },
@@ -765,10 +765,10 @@
         "name": "Autocracy",
         "era": "Industrial era",
         "priorities": {
-            "Neutral": 50,
+            "Neutral": 40,
             "Cultural": 40,
             "Diplomatic": 40,
-            "Domination": 50,
+            "Domination": 80,
             "Scientific": 40
         },
         "uniques": [
@@ -836,11 +836,11 @@
         "name": "Order",
         "era": "Industrial era",
         "priorities": {
-            "Neutral": 50,
+            "Neutral": 40,
             "Cultural": 40,
-            "Diplomatic": 50,
+            "Diplomatic": 60,
             "Domination": 40,
-            "Scientific": 50
+            "Scientific": 60
         },
         "uniques": [
             "[+2 Happiness] from every [Monument]",
