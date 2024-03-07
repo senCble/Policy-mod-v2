@@ -133,7 +133,9 @@
             },
             {
                 "name": "Liberty Complete",
-                "uniques": ["Free Great Person"]
+                "uniques": [
+			"Free Great Person",
+			"[Faith] cost of purchasing items in cities [-10]% <starting from the [Industrial era]>"]
             }
         ]
     },
@@ -215,7 +217,7 @@
         "name": "Piety",
         "era": "Ancient era",
         "priorities": {
-            "Neutral": 10,
+            "Neutral": 0,
             "Cultural": 10,
             "Diplomatic": 10,
             "Domination": 10,
@@ -240,7 +242,7 @@
                 "name": "Mandate Of Heaven",
                 "uniques": [
                     "[Faith] cost of purchasing items in cities [-20]%",
-                    "[+5 Happiness] from every [Grand Temple]",
+                    "[+2 Happiness] from every [Temple]",
                 ],
                 "row": 1,
                 "column": 5
@@ -258,9 +260,9 @@
             {
                 "name": "Free Religion",
                 "uniques": [
-                    	"May choose [1] additional [Pantheon] beliefs when [founding] a religion",
-                    	"Gain a free [Pantheon] belief <after founding a religion>",
-			"[+3 Culture] from every [Holy site]",
+                    "May choose [1] additional [Pantheon] beliefs when [founding] a religion",
+                    "Gain a free [Pantheon] belief <after founding a religion>",
+		    "[+3 Culture] from every [Holy site]",
                 ],
                 "requires": ["Organized Religion"],
                 "row": 2,
