@@ -125,7 +125,7 @@
                 "name": "Meritocracy",
                 "uniques": [
                     "[+1 Happiness] [in all cities connected to capital]",
-                    "[-6.25]% Unhappiness from [Population] [in all non-occupied cities]"
+                    "[-5]% Unhappiness from [Population] [in all non-occupied cities]"
                 ],
                 "requires": ["Citizenship"],
                 "row": 2,
@@ -145,8 +145,8 @@
         "priorities": {
             "Neutral": 0,
             "Cultural": 0,
-            "Diplomatic": 10,
-            "Domination": 30,
+            "Diplomatic": 0,
+            "Domination": 40,
             "Scientific": 0
         },
         "uniques": [
@@ -221,7 +221,7 @@
             "Cultural": 10,
             "Diplomatic": 10,
             "Domination": 10,
-            "Scientific": 0
+            "Scientific": 10
         },
         "uniques": [
 		"[+100]% Production when constructing [Shrine] buildings [in all cities]",
@@ -282,7 +282,7 @@
             {
                 "name": "Piety Complete",
                 "uniques": [
-                    "[+25]% Great Person generation from every [Temple]",
+                    "Provides a [Garden] in your first [4] cities for free",
                     "Free [Great Prophet] appears"
                 ]
             }
@@ -378,8 +378,7 @@
             {
                 "name": "Monumentality",
                 "uniques": [
-                    "[+50]% Golden Age length",
-		    "Empire enters golden age"
+                    "[+50]% Golden Age length",  
                 ],
                 "row": 1,
                 "column": 5
@@ -387,7 +386,7 @@
             {
                 "name": "Cultural Exchange",
                 "uniques": [
-                    "When declaring friendship, both parties gain a [20]% boost to Great Person generation"
+                    "When declaring friendship, both parties gain a [20]% boost to great person generation"
                 ],
                 "requires": ["Cultural Centers"],
                 "row": 2,
