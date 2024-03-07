@@ -242,7 +242,8 @@
                 "name": "Mandate Of Heaven",
                 "uniques": [
                     "[Faith] cost of purchasing items in cities [-20]%",
-                    "[+2 Happiness] from every [Temple]",
+                    "[+1 Happiness] from every [Temple]",
+		    "[+2 Happiness] from every [Grand Temple]"
                 ],
                 "row": 1,
                 "column": 5
@@ -281,7 +282,7 @@
             {
                 "name": "Piety Complete",
                 "uniques": [
-                    "Provides a [Garden] in your first [4] cities for free",
+                    "[+25]% Great Person generation from every [Temple]",
                     "Free [Great Prophet] appears"
                 ]
             }
@@ -385,7 +386,7 @@
             {
                 "name": "Cultural Exchange",
                 "uniques": [
-                    "When declaring friendship, both parties gain a [25]% boost to great person generation"
+                    "When declaring friendship, both parties gain a [20]% boost to Great Person generation"
                 ],
                 "requires": ["Cultural Centers"],
                 "row": 2,
@@ -413,7 +414,7 @@
             {
                 "name": "Aesthetics Complete",
                 "uniques": [
-                    "[+25]% [Culture] [in all cities with a world wonder]",
+                    "[+33]% [Culture] [in all cities with a world wonder]",
                     "May buy [Great Artist] units for [1000] [Faith] [in all cities in which the majority religion is a major religion] at an increasing price ([500]) <starting from the [Industrial era]>"
                 ]
             }
