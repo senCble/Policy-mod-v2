@@ -6,8 +6,8 @@
         "era": "Ancient era",
         "priorities": {
             "Neutral": 0,
-            "Cultural": 20,
-            "Diplomatic": 10,
+            "Cultural": 10,
+            "Diplomatic": 20,
             "Domination": 0,
             "Scientific": 10
         },
@@ -77,7 +77,7 @@
         "priorities": {
             "Neutral": 10,
             "Cultural": 10,
-            "Diplomatic": 20,
+            "Diplomatic": 10,
             "Domination": 20,
             "Scientific": 20
         },
@@ -145,8 +145,8 @@
         "priorities": {
             "Neutral": 0,
             "Cultural": 0,
-            "Diplomatic": 0,
-            "Domination": 40,
+            "Diplomatic": 10,
+            "Domination": 20,
             "Scientific": 0
         },
         "uniques": [
@@ -219,9 +219,9 @@
         "priorities": {
             "Neutral": 0,
             "Cultural": 10,
-            "Diplomatic": 10,
+            "Diplomatic": 20,
             "Domination": 10,
-            "Scientific": 10
+            "Scientific": 0
         },
         "uniques": [
 		"[+100]% Production when constructing [Shrine] buildings [in all cities]",
@@ -293,10 +293,10 @@
         "era": "Classical era",
         "priorities": {
             "Neutral": 0,
-            "Cultural": 10,
-            "Diplomatic": 30,
+            "Cultural": 20,
+            "Diplomatic": 40,
             "Domination": 0,
-            "Scientific": 10
+            "Scientific": 20
         },
         "uniques": ["[-25]% City-State Influence degradation"],
         "policies": [
@@ -363,7 +363,7 @@
             "Cultural": 40,
             "Diplomatic": 0,
             "Domination": 0,
-            "Scientific": 10
+            "Scientific": 20
         },
         "uniques": ["[+15]% Production when constructing [All] wonders [in all cities]",],
 		"policies": [
@@ -422,12 +422,12 @@
 	},
     {
         "name": "Commerce",
-        "era": "Medieval era",
+        "era": "Classical era",
         "priorities": {
             "Neutral": 10,
-            "Cultural": 10,
-            "Diplomatic": 10,
-            "Domination": 10,
+            "Cultural": 20,
+            "Diplomatic": 30,
+            "Domination": 30,
             "Scientific": 10
         },
         "uniques": ["[+25]% [Gold] [in capital]"],
@@ -496,8 +496,8 @@
             "Neutral": 0,
             "Cultural": 0,
             "Diplomatic": 0,
-            "Domination": 15,
-            "Scientific": 10
+            "Domination": 40,
+            "Scientific": 0
         },
         "uniques": [
             "[+1] Movement <for [{Military} {Water}] units>",
@@ -526,7 +526,7 @@
             {
                 "name": "Merchant Navy",
                 "uniques": [
-                    "[+2 Production, +2 Food, +2 Gold] from every [Fishing Boats]",
+                    "[+1 Production, +1 Food, +2 Gold] from every [Fishing Boats]",
                 ],
                 "requires": ["Naval Tradition","Maritime Infrastructure"],
                 "row": 2,
@@ -557,6 +557,7 @@
                 "name": "Exploration Complete",
                 "uniques": [
                     "Empire enters golden age",
+		    "[Great General] is earned [50]% faster",
                     "May buy [Great General] units for [1000] [Faith] [in all cities in which the majority religion is a major religion] at an increasing price ([500]) <starting from the [Industrial era]>",
                 ]
             }
@@ -568,16 +569,16 @@
         "priorities": {
             "Neutral": 10,
             "Cultural": 0,
-            "Diplomatic": 15,
-            "Domination": 0,
-            "Scientific": 0
+            "Diplomatic": 0,
+            "Domination": 40,
+            "Scientific": 20
         },
         "uniques": [
                      "[+1 Culture] from every [Palace]",
                      "[+1 Culture] from every [Walls]",
-                     "[+1 Culture] from every [Castle]",
+                     "[+1 Science] from every [Castle]",
                      "[+1 Culture] from every [Arsenal]",
-                     "[+1 Culture] from every [Military Base]",
+                     "[+1 Science] from every [Military Base]",
         ],
         "policies": [
             {
@@ -644,10 +645,10 @@
         "name": "Rationalism",
         "era": "Renaissance era",
         "priorities": {
-            "Neutral": 10,
-            "Cultural": 10,
-            "Diplomatic": 10,
-            "Domination": 10,
+            "Neutral": 20,
+            "Cultural": 30,
+            "Diplomatic": 30,
+            "Domination": 30,
             "Scientific": 60
         },
         "uniques": [
@@ -710,8 +711,8 @@
         "era": "Industrial era",
         "priorities": {
             "Neutral": 50,
-            "Cultural": 60,
-            "Diplomatic": 50,
+            "Cultural": 50,
+            "Diplomatic": 40,
             "Domination": 40,
             "Scientific": 50
         },
@@ -770,7 +771,7 @@
             "Neutral": 50,
             "Cultural": 40,
             "Diplomatic": 40,
-            "Domination": 80,
+            "Domination": 50,
             "Scientific": 40
         },
         "uniques": [
@@ -840,9 +841,9 @@
         "priorities": {
             "Neutral": 50,
             "Cultural": 40,
-            "Diplomatic": 60,
+            "Diplomatic": 50,
             "Domination": 40,
-            "Scientific": 60
+            "Scientific": 50
         },
         "uniques": [
             "[+2 Happiness] from every [Monument]",
@@ -908,10 +909,10 @@
         "era": "Modern era",
         "priorities": {
             "Neutral": 10,
-            "Cultural": 10,
-            "Diplomatic": 0,
+            "Cultural": 20,
+            "Diplomatic": 30,
             "Domination": 0,
-            "Scientific": 10
+            "Scientific": 40
         },
         "uniques": [
                     "[+2 Science] from every [Forest]",
@@ -941,9 +942,9 @@
                 "name": "Ecotourism",
                 "uniques": [
                     "[+100]% Yield from every [Natural Wonder]",
-                    "[+2 Gold] from every [Atoll]",
-                    "[+2 Gold] from every [Oasis]",
-                    "[+2 Gold] from every [Lakes]",
+                    "[+3 Gold] from every [Atoll]",
+                    "[+3 Gold] from every [Oasis]",
+                    "[+3 Gold] from every [Lakes]",
                 ],
                 "requires": ["Forest Management"],
                 "row": 2,
@@ -967,6 +968,7 @@
 		"[+100]% Production when constructing [Hydro Plant] buildings [in all cities]",
 		"[+100]% Production when constructing [Solar Plant] buildings [in all cities]",
 		"[+100]% Production when constructing [Recycling Center] buildings [in all cities]",
+		"[+100]% Production when constructing [Nuclear Plant] buildings [in all cities]",
                 ],
                 "requires": ["Sustainable Innovation"],
                 "row": 2,
