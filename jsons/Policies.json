@@ -371,7 +371,8 @@
             {
                 "name": "Cultural Centers",
                 "uniques": [
-                    "[+2 Happiness] from every [World Wonder]"
+                    "[+1 Happiness] from every [World Wonder]",
+		    "[+1 Happiness] from every [National Wonder]"
                 ],
                 "row": 1,
                 "column": 2
@@ -415,7 +416,7 @@
             {
                 "name": "Aesthetics Complete",
                 "uniques": [
-                    "[+33]% [Culture] [in all cities with a world wonder]",
+                    "[+25]% [Culture] [in all cities with a world wonder]",
                     "May buy [Great Artist] units for [1000] [Faith] [in all cities in which the majority religion is a major religion] at an increasing price ([500]) <starting from the [Industrial era]>"
                 ]
             }
@@ -425,7 +426,7 @@
         "name": "Commerce",
         "era": "Medieval era",
         "priorities": {
-            "Neutral": 10,
+            "Neutral": 0,
             "Cultural": 10,
             "Diplomatic": 20,
             "Domination": 20,
@@ -584,12 +585,12 @@
             {
                 "name": "Divine Rule",
                 "uniques": [
-                    "[+3 Science] from every [National College]",
-                    "[+3 Happiness] from every [Circus Maximus]",
-                    "[+3 Faith] from every [Grand Temple]",
-                    "[+3 Gold] from every [National Treasury]",
-                    "[+3 Production] from every [Iron Works]",
-                    "[+3 Culture] from every [Hermitage]",
+                    "[+4 Science] from every [National College]",
+                    "[+4 Happiness] from every [Circus Maximus]",
+                    "[+4 Faith] from every [Grand Temple]",
+                    "[+4 Gold] from every [National Treasury]",
+                    "[+4 Production] from every [Iron Works]",
+                    "[+4 Culture] from every [Hermitage]",
                 ],
                 "row": 1,
                 "column": 2
@@ -623,7 +624,7 @@
             {
                 "name": "Imperialism",
                 "uniques": [
-                    "[+25]% Strength <for [Land] units> <on foreign continents>",
+                    "[+15]% Strength <for [Land] units> <on foreign continents>",
                 ],
                 "requires": ["Knightly Order"],
                 "row": 3,
