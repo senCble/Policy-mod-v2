@@ -243,7 +243,7 @@
                 "uniques": [
 		    "[+1 Faith] from every [Temple]",
 		    "[Faith] cost of purchasing items in cities [-20]%",  
-		    "Gain enough Faith for [20]% of a Great Prophet"
+		    "Gain enough Faith for [10]% of a Great Prophet"
                 ],
 		"requires": ["Organized Religion"],
                 "row": 2,
