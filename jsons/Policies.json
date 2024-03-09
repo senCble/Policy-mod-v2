@@ -135,7 +135,7 @@
                 "name": "Liberty Complete",
                 "uniques": [
 		    "Free Great Person",
-		    "[Faith] cost of purchasing [Great Person] units in cities [-10]% <starting from the [Industrial era]>"]
+		    "[Faith] cost of purchasing [Great Person] units in [in all cities in which the majority religion is a major religion] [-10]% <starting from the [Industrial era]>"]
             }
         ]
     },
@@ -266,7 +266,7 @@
                     "Gain a free [Pantheon] belief <after founding a religion>",
 		    "[+3 Culture] from every [Holy site]",
                 ],
-                "requires": ["Mandate of Heaven"],
+                "requires": ["Mandate Of Heaven"],
                 "row": 3,
                 "column": 1
             },
@@ -276,7 +276,7 @@
                     "[+2 Science] from every [Temple]",
                     "[+3 Science] from every [Holy site]"
                 ],
-                "requires": ["Mandate of Heaven"],
+                "requires": ["Mandate Of Heaven"],
                 "row": 3,
                 "column": 3
             },
@@ -560,7 +560,7 @@
                 "uniques": [
                     "Empire enters golden age",
 		    "[Great General] is earned [50]% faster",
-                    "May buy [Water] units with [Faith] [in all cities in which the majority religion is a major religion] <starting from the [Industrial era]",
+                    "May buy [Water] units with [Faith] [in all cities in which the majority religion is a major religion] <starting from the [Industrial era]>",
                 ]
             }
                 ]
@@ -637,7 +637,7 @@
                      "[+1 Happiness] from every [Castle]",
                      "[+1 Happiness] from every [Arsenal]",
                      "[+1 Happiness] from every [Military Base]",
-		     "May buy [Land] units with [Faith] [in all cities in which the majority religion is a major religion] <starting from the [Industrial era]"
+		     "May buy [Land] units with [Faith] [in all cities in which the majority religion is a major religion] <starting from the [Industrial era]>"
                 ]
             }
                 ]
