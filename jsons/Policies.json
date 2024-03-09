@@ -7,7 +7,7 @@
         "priorities": {
             "Neutral": 0,
             "Cultural": 10,
-            "Diplomatic": 20,
+            "Diplomatic": 10,
             "Domination": 0,
             "Scientific": 10
         },
@@ -78,8 +78,8 @@
             "Neutral": 10,
             "Cultural": 10,
             "Diplomatic": 10,
-            "Domination": 20,
-            "Scientific": 20
+            "Domination": 10,
+            "Scientific": 10
         },
         "uniques": ["[+1 Culture] [in all cities]"],
         "policies": [
@@ -145,7 +145,7 @@
         "priorities": {
             "Neutral": 0,
             "Cultural": 0,
-            "Diplomatic": 10,
+            "Diplomatic": 0,
             "Domination": 30,
             "Scientific": 0
         },
@@ -219,7 +219,7 @@
         "priorities": {
             "Neutral": 0,
             "Cultural": 10,
-            "Diplomatic": 20,
+            "Diplomatic": 10,
             "Domination": 10,
             "Scientific": 0
         },
@@ -233,20 +233,20 @@
                 "name": "Organized Religion",
                 "uniques": [
                     "[+1 Faith] from every [Shrine]",
-                    "[+1 Faith] from every [Temple]",
+                    "[+1 Culture] from every [Shrine]",
                 ],
                 "row": 1,
-                "column": 2
+                "column": 3
             },
             {
                 "name": "Mandate Of Heaven",
                 "uniques": [
-                    "[Faith] cost of purchasing items in cities [-20]%",
-                    "[+1 Happiness] from every [Temple]",
-		    "[+1 Happiness] from every [Grand Temple]"
+		    "[+1 Faith] from every [Temple]",
+                    "[+1 Happiness] from every [Temple]"
                 ],
-                "row": 1,
-                "column": 5
+		"requires": ["Organized Religion"],
+                "row": 2,
+                "column": 2
             },
             {
                 "name": "Theocracy",
@@ -256,7 +256,7 @@
                 ],
                 "requires": ["Organized Religion"],
                 "row": 2,
-                "column": 1
+                "column": 4
             },
             {
                 "name": "Free Religion",
@@ -265,19 +265,19 @@
                     "Gain a free [Pantheon] belief <after founding a religion>",
 		    "[+3 Culture] from every [Holy site]",
                 ],
-                "requires": ["Organized Religion"],
-                "row": 2,
-                "column": 3
+                "requires": ["Mandate of Heaven"],
+                "row": 3,
+                "column": 1
             },
             {
                 "name": "Reformation",
                 "uniques": [
-                    "[+2 Science] from every [Temple]",
+                    "[Faith] cost of purchasing items in cities [-20]%",
                     "[+3 Science] from every [Holy site]"
                 ],
-                "requires": ["Free Religion"],
+                "requires": ["Mandate of Heaven"],
                 "row": 3,
-                "column": 4
+                "column": 3
             },
             {
                 "name": "Piety Complete",
@@ -294,7 +294,7 @@
         "priorities": {
             "Neutral": 0,
             "Cultural": 10,
-            "Diplomatic": 30,
+            "Diplomatic": 20,
             "Domination": 0,
             "Scientific": 10
         },
@@ -360,7 +360,7 @@
         "era": "Classical era",
         "priorities": {
             "Neutral": 0,
-            "Cultural": 40,
+            "Cultural": 30,
             "Diplomatic": 0,
             "Domination": 0,
             "Scientific": 10
@@ -422,7 +422,7 @@
 	},
     {
         "name": "Commerce",
-        "era": "Classical era",
+        "era": "Medieval era",
         "priorities": {
             "Neutral": 10,
             "Cultural": 10,
@@ -496,7 +496,7 @@
             "Neutral": 0,
             "Cultural": 0,
             "Diplomatic": 0,
-            "Domination": 50,
+            "Domination": 40,
             "Scientific": 0
         },
         "uniques": [
@@ -526,7 +526,7 @@
             {
                 "name": "Merchant Navy",
                 "uniques": [
-                    "[+1 Production, +1 Food, +2 Gold] from every [Fishing Boats]",
+                    "[+2 Production, +2 Food, +2 Gold] from every [Fishing Boats]",
                 ],
                 "requires": ["Naval Tradition","Maritime Infrastructure"],
                 "row": 2,
@@ -565,17 +565,15 @@
 	},
     {
         "name": "Nobility",
-        "era": "Medieval era",
+        "era": "Classical era",
         "priorities": {
             "Neutral": 0,
             "Cultural": 0,
             "Diplomatic": 0,
-            "Domination": 40,
+            "Domination": 30,
             "Scientific": 10
         },
         "uniques": [
-                     "[+1 Culture] from every [Palace]",
-		     "[+1 Science] from every [Palace]",
                      "[+1 Culture] from every [Walls]",
                      "[+1 Science] from every [Castle]",
                      "[+2 Culture] from every [Arsenal]",
@@ -585,12 +583,12 @@
             {
                 "name": "Divine Rule",
                 "uniques": [
-                    "[+4 Science] from every [National College]",
-                    "[+4 Happiness] from every [Circus Maximus]",
-                    "[+4 Faith] from every [Grand Temple]",
-                    "[+4 Gold] from every [National Treasury]",
-                    "[+4 Production] from every [Iron Works]",
-                    "[+4 Culture] from every [Hermitage]",
+                    "[+3 Science] from every [National College]",
+                    "[+3 Happiness] from every [Circus Maximus]",
+                    "[+3 Faith] from every [Grand Temple]",
+                    "[+3 Gold] from every [National Treasury]",
+                    "[+3 Production] from every [Iron Works]",
+                    "[+3 Culture] from every [Hermitage]",
                 ],
                 "row": 1,
                 "column": 2
@@ -633,7 +631,6 @@
             {
                 "name": "Nobility Complete",
                 "uniques": [
-                     "[+2 Happiness] from every [Palace]",
                      "[+1 Happiness] from every [Walls]",
                      "[+1 Happiness] from every [Castle]",
                      "[+1 Happiness] from every [Arsenal]",
@@ -648,9 +645,9 @@
         "priorities": {
             "Neutral": 10,
             "Cultural": 20,
-            "Diplomatic": 20,
+            "Diplomatic": 10,
             "Domination": 10,
-            "Scientific": 60
+            "Scientific": 50
         },
         "uniques": [
             "[+10]% [Science] <while the empire is happy>"
@@ -909,8 +906,8 @@
         "name": "Conservation",
         "era": "Modern era",
         "priorities": {
-            "Neutral": 10,
-            "Cultural": 10,
+            "Neutral": 20,
+            "Cultural": 0,
             "Diplomatic": 0,
             "Domination": 0,
             "Scientific": 40
