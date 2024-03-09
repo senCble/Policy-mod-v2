@@ -75,7 +75,7 @@
         "name": "Liberty",
         "era": "Ancient era",
         "priorities": {
-            "Neutral": 0,
+            "Neutral": 10,
             "Cultural": 10,
             "Diplomatic": 10,
             "Domination": 10,
@@ -388,7 +388,7 @@
             {
                 "name": "Cultural Exchange",
                 "uniques": [
-                    "When declaring friendship, both parties gain a [20]% boost to great person generation"
+                    "[+25]% Great Person generation [in all cities] <during a Golden Age>"
                 ],
                 "requires": ["Cultural Centers"],
                 "row": 2,
@@ -577,9 +577,9 @@
         },
         "uniques": [
                      "[+1 Culture] from every [Walls]",
-                     "[+1 Science] from every [Castle]",
-                     "[+2 Culture] from every [Arsenal]",
-                     "[+2 Science] from every [Military Base]",
+                     "[+1 Culture] from every [Castle]",
+                     "[+1 Culture] from every [Arsenal]",
+                     "[+1 Culture] from every [Military Base]",
         ],
         "policies": [
             {
@@ -646,11 +646,11 @@
         "name": "Rationalism",
         "era": "Renaissance era",
         "priorities": {
-            "Neutral": 10,
+            "Neutral": 0,
             "Cultural": 20,
             "Diplomatic": 10,
             "Domination": 10,
-            "Scientific": 50
+            "Scientific": 60
         },
         "uniques": [
             "[+10]% [Science] <while the empire is happy>"
