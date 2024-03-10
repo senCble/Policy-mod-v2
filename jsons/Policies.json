@@ -373,7 +373,7 @@
                 "name": "Cultural Centers",
                 "uniques": [
                     "[+1 Happiness] [in all cities with a world wonder]",
-		    "[+1 Happiness] from every [National Wonder]"
+		    "[+1 Happiness] from every [Wonder]"
                 ],
                 "row": 1,
                 "column": 2
@@ -418,7 +418,7 @@
                 "name": "Aesthetics Complete",
                 "uniques": [
                     "[+17]% [Culture] [in all cities with a world wonder]",
-		    "[+5]% [Culture] from every [National Wonder]",
+		    "[+1 Culture] from every [Wonder]",
                     "May buy [Great Artist] units for [1000] [Faith] [in all cities in which the majority religion is a major religion] at an increasing price ([500]) <starting from the [Industrial era]>"
                 ]
             }
