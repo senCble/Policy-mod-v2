@@ -912,7 +912,7 @@
         "era": "Modern era",
         "priorities": {
             "Neutral": 10,
-            "Cultural": 0,
+            "Cultural": 10,
             "Diplomatic": 0,
             "Domination": 0,
             "Scientific": 20
