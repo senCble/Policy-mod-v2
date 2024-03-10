@@ -124,7 +124,7 @@
             {
                 "name": "Meritocracy",
                 "uniques": [
-		    "[+1 Happiness] from every [Palace]",
+		    "[+1 Happiness] [in capital]",
                     "[+1 Happiness] [in all cities connected to capital]",
                     "[-5]% Unhappiness from [Population] [in all non-occupied cities]"
                 ],
@@ -615,7 +615,7 @@
                 "column": 4
             },
             {
-                "name": "Fortifications",
+                "name": "Fortified Borders",
                 "uniques": [
 		    "[+1 Happiness] from every [Walls]",
                     "[+1 Happiness] from every [Castle]",
