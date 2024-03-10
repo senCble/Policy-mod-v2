@@ -372,7 +372,6 @@
             {
                 "name": "Cultural Centers",
                 "uniques": [
-                    "[+1 Happiness] [in all cities with a world wonder]",
 		    "[+1 Happiness] from every [Wonder]"
                 ],
                 "row": 1,
@@ -581,7 +580,6 @@
                      "[+1 Culture] from every [Walls]",
                      "[+1 Science] from every [Castle]",
                      "[+1 Culture] from every [Arsenal]",
-                     "[+1 Science] from every [Military Base]",
         ],
         "policies": [
             {
@@ -620,7 +618,6 @@
 		    "[+1 Happiness] from every [Walls]",
                     "[+1 Happiness] from every [Castle]",
                     "[+1 Happiness] from every [Arsenal]",
-                    "[+1 Happiness] from every [Military Base]",
                 ],
                 "requires": ["Divine Rule","Knightly Order"],
                 "row": 3,
@@ -913,7 +910,7 @@
         "priorities": {
             "Neutral": 10,
             "Cultural": 10,
-            "Diplomatic": 0,
+            "Diplomatic": 10,
             "Domination": 0,
             "Scientific": 20
         },
