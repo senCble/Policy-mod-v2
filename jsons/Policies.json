@@ -361,8 +361,8 @@
         "era": "Classical era",
         "priorities": {
             "Neutral": 0,
-            "Cultural": 30,
-            "Diplomatic": 0,
+            "Cultural": 20,
+            "Diplomatic": 10,
             "Domination": 0,
             "Scientific": 10
         },
@@ -499,7 +499,7 @@
             "Neutral": 0,
             "Cultural": 0,
             "Diplomatic": 10,
-            "Domination": 30,
+            "Domination": 20,
             "Scientific": 0
         },
         "uniques": [
@@ -573,14 +573,14 @@
             "Neutral": 0,
             "Cultural": 0,
             "Diplomatic": 0,
-            "Domination": 30,
+            "Domination": 20,
             "Scientific": 10
         },
         "uniques": [
                      "[+1 Culture] from every [Walls]",
-                     "[+1 Culture] from every [Castle]",
+                     "[+1 Science] from every [Castle]",
                      "[+1 Culture] from every [Arsenal]",
-                     "[+1 Culture] from every [Military Base]",
+                     "[+1 Science] from every [Military Base]",
         ],
         "policies": [
             {
