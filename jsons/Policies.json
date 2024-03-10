@@ -561,7 +561,7 @@
                 "uniques": [
                     "Empire enters golden age",
 		    "[Great General] is earned [50]% faster",
-                    "May buy [Water] units with [Faith] [in all cities in which the majority religion is a major religion] <starting from the [Industrial era]>",
+                    "May buy [{Military} {Water} {non-[Mercenary]}] units with [Faith] for [2] times their normal Production cost [in all cities in which the majority religion is a major religion] <starting from the [Industrial era]>",
                 ]
             }
                 ]
@@ -638,7 +638,7 @@
                      "[+1 Happiness] from every [Castle]",
                      "[+1 Happiness] from every [Arsenal]",
                      "[+1 Happiness] from every [Military Base]",
-		     "May buy [Land] units with [Faith] [in all cities in which the majority religion is a major religion] <starting from the [Industrial era]>"
+		     "May buy [{Military} {Land} {non-[Mercenary]}] units with [Faith] for [2] times their normal Production cost [in all cities in which the majority religion is a major religion] <starting from the [Industrial era]>"
                 ]
             }
                 ]
