@@ -81,7 +81,10 @@
             "Domination": 10,
             "Scientific": 10
         },
-        "uniques": ["[+1 Culture] [in all cities]"],
+        "uniques": [
+		"[+1 Culture] [in all cities]",
+		"[+1 Happiness] [in capital]",
+	],
         "policies": [
             {
                 "name": "Collective Rule",
@@ -124,7 +127,6 @@
             {
                 "name": "Meritocracy",
                 "uniques": [
-		    "[+1 Happiness] [in capital]",
                     "[+1 Happiness] [in all cities connected to capital]",
                     "[-5]% Unhappiness from [Population] [in all non-occupied cities]"
                 ],
