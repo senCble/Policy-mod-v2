@@ -124,8 +124,9 @@
             {
                 "name": "Meritocracy",
                 "uniques": [
+		    "[+1 Happiness] from every [Palace]",
                     "[+1 Happiness] [in all cities connected to capital]",
-                    "[-6]% Unhappiness from [Population] [in all non-occupied cities]"
+                    "[-5]% Unhappiness from [Population] [in all non-occupied cities]"
                 ],
                 "requires": ["Republic"],
                 "row": 2,
@@ -844,8 +845,8 @@
             "Neutral": 50,
             "Cultural": 40,
             "Diplomatic": 60,
-            "Domination": 40,
-            "Scientific": 60
+            "Domination": 50,
+            "Scientific": 50
         },
         "uniques": [
             "[+2 Happiness] from every [Monument]",
@@ -914,7 +915,7 @@
             "Cultural": 0,
             "Diplomatic": 0,
             "Domination": 0,
-            "Scientific": 30
+            "Scientific": 20
         },
         "uniques": [
                     "[+2 Science] from every [Forest]",
