@@ -578,9 +578,9 @@
         },
         "uniques": [
                      "[+1 Culture] from every [Walls]",
-                     "[+1 Science] from every [Castle]",
-                     "[+2 Culture] from every [Arsenal]",
-                     "[+2 Science] from every [Military Base]",
+                     "[+1 Culture] from every [Castle]",
+                     "[+1 Culture] from every [Arsenal]",
+                     "[+1 Culture] from every [Military Base]",
         ],
         "policies": [
             {
