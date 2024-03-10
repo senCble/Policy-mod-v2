@@ -145,8 +145,8 @@
         "priorities": {
             "Neutral": 0,
             "Cultural": 0,
-            "Diplomatic": 0,
-            "Domination": 30,
+            "Diplomatic": 10,
+            "Domination": 20,
             "Scientific": 0
         },
         "uniques": [
@@ -371,7 +371,7 @@
             {
                 "name": "Cultural Centers",
                 "uniques": [
-                    "[+1 Happiness] from every [World Wonder]",
+                    "[+1 Happiness] [in all cities with a world wonder]",
 		    "[+1 Happiness] from every [National Wonder]"
                 ],
                 "row": 1,
@@ -416,7 +416,8 @@
             {
                 "name": "Aesthetics Complete",
                 "uniques": [
-                    "[+25]% [Culture] [in all cities with a world wonder]",
+                    "[+16]% [Culture] [in all cities with a world wonder]",
+		    "[+6]% [Culture] from every [National Wonder]",
                     "May buy [Great Artist] units for [1000] [Faith] [in all cities in which the majority religion is a major religion] at an increasing price ([500]) <starting from the [Industrial era]>"
                 ]
             }
@@ -497,8 +498,8 @@
         "priorities": {
             "Neutral": 0,
             "Cultural": 0,
-            "Diplomatic": 0,
-            "Domination": 40,
+            "Diplomatic": 10,
+            "Domination": 30,
             "Scientific": 0
         },
         "uniques": [
@@ -577,9 +578,9 @@
         },
         "uniques": [
                      "[+1 Culture] from every [Walls]",
-                     "[+1 Culture] from every [Castle]",
-                     "[+1 Culture] from every [Arsenal]",
-                     "[+1 Culture] from every [Military Base]",
+                     "[+1 Science] from every [Castle]",
+                     "[+2 Culture] from every [Arsenal]",
+                     "[+2 Science] from every [Military Base]",
         ],
         "policies": [
             {
@@ -646,8 +647,8 @@
         "name": "Rationalism",
         "era": "Renaissance era",
         "priorities": {
-            "Neutral": 0,
-            "Cultural": 20,
+            "Neutral": 10,
+            "Cultural": 10,
             "Diplomatic": 10,
             "Domination": 10,
             "Scientific": 60
@@ -909,11 +910,11 @@
         "name": "Conservation",
         "era": "Modern era",
         "priorities": {
-            "Neutral": 20,
+            "Neutral": 10,
             "Cultural": 0,
             "Diplomatic": 0,
             "Domination": 0,
-            "Scientific": 40
+            "Scientific": 30
         },
         "uniques": [
                     "[+2 Science] from every [Forest]",
