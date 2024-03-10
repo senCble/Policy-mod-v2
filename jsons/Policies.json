@@ -586,12 +586,12 @@
             {
                 "name": "Divine Rule",
                 "uniques": [
-                    "[+4 Science] from every [National College]",
-                    "[+4 Happiness] from every [Circus Maximus]",
-                    "[+4 Faith] from every [Grand Temple]",
-                    "[+4 Gold] from every [National Treasury]",
-                    "[+4 Production] from every [Iron Works]",
-                    "[+4 Culture] from every [Hermitage]",
+                    "[+3 Science] from every [National College]",
+                    "[+3 Happiness] from every [Circus Maximus]",
+                    "[+3 Faith] from every [Grand Temple]",
+                    "[+3 Gold] from every [National Treasury]",
+                    "[+3 Production] from every [Iron Works]",
+                    "[+3 Culture] from every [Hermitage]",
                 ],
                 "row": 1,
                 "column": 2
