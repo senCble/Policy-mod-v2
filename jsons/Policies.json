@@ -125,7 +125,7 @@
                 "name": "Meritocracy",
                 "uniques": [
                     "[+1 Happiness] [in all cities connected to capital]",
-                    "[-5]% Unhappiness from [Population] [in all non-occupied cities]"
+                    "[-6]% Unhappiness from [Population] [in all non-occupied cities]"
                 ],
                 "requires": ["Republic"],
                 "row": 2,
@@ -416,8 +416,8 @@
             {
                 "name": "Aesthetics Complete",
                 "uniques": [
-                    "[+16]% [Culture] [in all cities with a world wonder]",
-		    "[+6]% [Culture] from every [National Wonder]",
+                    "[+17]% [Culture] [in all cities with a world wonder]",
+		    "[+5]% [Culture] from every [National Wonder]",
                     "May buy [Great Artist] units for [1000] [Faith] [in all cities in which the majority religion is a major religion] at an increasing price ([500]) <starting from the [Industrial era]>"
                 ]
             }
@@ -648,7 +648,7 @@
         "era": "Renaissance era",
         "priorities": {
             "Neutral": 10,
-            "Cultural": 10,
+            "Cultural": 20,
             "Diplomatic": 10,
             "Domination": 10,
             "Scientific": 60
