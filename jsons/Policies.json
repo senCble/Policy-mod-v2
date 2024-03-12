@@ -246,7 +246,7 @@
                 "uniques": [
 		    "[+1 Faith] from every [Temple]",
 		    "[Faith] cost of purchasing items in cities [-20]%",  
-		    "Gain enough Faith for [10]% of a Great Prophet"
+		    "Gain enough Faith for [20]% of a Great Prophet <after founding a Pantheon>"
                 ],
 		"requires": ["Organized Religion"],
                 "row": 2,
@@ -418,8 +418,7 @@
             {
                 "name": "Aesthetics Complete",
                 "uniques": [
-                    "[+17]% [Culture] [in all cities with a world wonder]",
-		    "[+1 Culture] from every [Wonder]",
+                    "[+2 Culture] from every [Wonder]",
                     "May buy [Great Artist] units for [1000] [Faith] [in all cities in which the majority religion is a major religion] at an increasing price ([500]) <starting from the [Industrial era]>"
                 ]
             }
@@ -580,8 +579,7 @@
         "uniques": [
                      "[+1 Culture] from every [Walls]",
                      "[+1 Culture] from every [Castle]",
-                     "[+2 Science] from every [Arsenal]",
-		     "[+2 Science] from every [Military Base]",
+                     "[+1 Culture] from every [Arsenal]",,
         ],
         "policies": [
             {
@@ -600,7 +598,8 @@
             {
                 "name": "Feudalism",
                 "uniques": [
-                    "[+1 Food] from every [Farm] <in [non-[Fresh Water]] tiles>",
+                    "[+1 Food] from every [Farm] <in [non-[Fresh Water]] tiles> <before discovering [Fertilizer]>",
+		    "[+1 Science] from every [Farm] <in [non-[Fresh Water]] tiles> <after discovering [Fertilizer]>"
                 ],
                 "row": 1,
                 "column": 4
@@ -620,7 +619,6 @@
 		    "[+1 Happiness] from every [Walls]",
                     "[+1 Happiness] from every [Castle]",
                     "[+1 Happiness] from every [Arsenal]",
-		    "[+1 Happiness] from every [Military Base]",
                 ],
                 "requires": ["Divine Rule","Knightly Order"],
                 "row": 3,
@@ -671,7 +669,7 @@
                 "uniques": [
                     "[+1 Happiness] from every [University]",
                     "[+1 Happiness] from every [Observatory]",
-                    "[+1 Happiness] from every [Public School]"
+                    "[+1 Happiness] from every [Public School]",
                 ],
                 "row": 1,
                 "column": 5
