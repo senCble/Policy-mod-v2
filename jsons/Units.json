@@ -4,8 +4,8 @@
 		"unitType": "Civilian",
 		"movement": 2,
 		"uniques": ["Can build [Land] improvements on tiles", 
-              "Can build [Water] improvements on tiles", 
-              "Automation is a primary action"],
+              		"Can build [Water] improvements on tiles", 
+              		"Automation is a primary action"],
 		"cost": 70
   },
   {
@@ -14,10 +14,10 @@
 		"movement": 2,
 		"strength": 5,
 		"cost": 25,
-    	"upgradesTo": "Marine"
-		"obsoleteTech": "Scientific Theory",
+    		"upgradesTo": "Marine"
+		"obsoleteTech": "Pharmaceuticals",
 		"uniques": ["May upgrade to [Archer] through ruins-like effects",
-            "Never appears as a Barbarian unit"],
+            		"Never appears as a Barbarian unit"],
 		"promotions": ["Ignore terrain cost"],
 		"attackSound": "nonmetalhit"
   },
@@ -28,9 +28,9 @@
 		"cost": 25,
 		"requiredTech": "Sailing",
 		"uniques": ["Cannot enter ocean tiles <before discovering [Astronomy]>",
-            "May create improvements on water resources",
-            "Uncapturable",
-            "Automation is a primary action"]
+            		"May create improvements on water resources",
+            		"Uncapturable",
+            		"Automation is a primary action"]
   },
   {
 		"name": "Marine",
@@ -40,7 +40,9 @@
 		"cost": 400,
 		"requiredTech": "Pharmaceuticals",
 		"promotions": ["Amphibious"],
-		"uniques": ["[+1] Sight <when [Embarked]>", "[+1] Movement <when [Embarked]>", "Defense bonus when embarked"],
+		"uniques": ["[+1] Sight <when [Embarked]>", 
+			"[+1] Movement <when [Embarked]>", 
+			"Defense bonus when embarked"],
 		"attackSound": "shot"
   },
 ]
