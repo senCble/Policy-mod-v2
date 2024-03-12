@@ -1,0 +1,48 @@
+"columnNumber": 2,
+		"era": "Ancient era",
+		"techCost": 55,
+		"buildingCost": 75,
+		"wonderCost": 185,
+		"techs": [
+			{
+				"name": "Sailing",
+				"row": 1,
+				"prerequisites": ["Pottery"],
+				"quote": "'He who commands the sea has command of everything.' - Themistocles"
+			},
+			{
+				"name": "Calendar",
+				"row": 2,
+				"prerequisites": ["Pottery"],
+				"quote": "'So teach us to number our days, so that we may apply our hearts unto wisdom.' - Bible Psalms 90:12"
+			},
+			{
+				"name": "Writing",
+				"row": 3,
+				"prerequisites": ["Pottery"],
+				"quote": "'He who destroys a good book kills reason itself.' - John Milton"
+			},
+			{
+				"name": "Trapping",
+				"row": 5,
+				"prerequisites": ["Animal Husbandry"],
+				"quote": "'Even brute beasts and wandering birds do not fall into the same traps or nets twice.' - Saint Jerome"
+			},
+			{
+				"name": "The Wheel",
+				"row": 7,
+				"prerequisites": ["Animal Husbandry", "Archery"],
+				"quote": "'Wisdom and virtue are like the two wheels of a cart.' - Japanese proverb"
+			},
+			{
+				"name": "Masonry",
+				"row": 9,
+				"prerequisites": ["Mining"],
+				"quote": "'How happy are those whose walls already rise!' - Virgil"
+			},
+			{
+				"name": "Bronze Working",
+				"row": 10,
+				"prerequisites": ["Mining"],
+				"quote": "'Here Hector entered, with a spear eleven cubits long in his hand; the bronze point gleamed in front of him, and was fastened to the shaft of the spear by a ring of gold.' - Homer"
+			}
