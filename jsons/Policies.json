@@ -562,7 +562,7 @@
                 "name": "Exploration Complete",
                 "uniques": [
                     "Empire enters golden age",
-		    "May buy [{Military} {Water} {non-[Mercenary]}] units with [Faith] for [2] times their normal Production cost [in all cities in which the majority religion is a major religion] <starting from the [Industrial era]>",
+		    "May buy [{Military} {Water} {non-[Mercenary]}] units with [Faith] for [2] times their normal Production cost <starting from the [Industrial era]>",
                 ]
             }
                 ]
@@ -580,7 +580,8 @@
         "uniques": [
                      "[+1 Culture] from every [Walls]",
                      "[+1 Culture] from every [Castle]",
-                     "[+1 Culture] from every [Arsenal]",
+                     "[+2 Science] from every [Arsenal]",
+		     "[+2 Science] from every [Military Base]",
         ],
         "policies": [
             {
@@ -619,6 +620,7 @@
 		    "[+1 Happiness] from every [Walls]",
                     "[+1 Happiness] from every [Castle]",
                     "[+1 Happiness] from every [Arsenal]",
+		    "[+1 Happiness] from every [Military Base]",
                 ],
                 "requires": ["Divine Rule","Knightly Order"],
                 "row": 3,
