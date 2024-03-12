@@ -1,5 +1,5 @@
 [
-  {
+	{
 		"name": "Worker",
 		"unitType": "Civilian",
 		"movement": 2,
@@ -7,8 +7,8 @@
               		"Can build [Water] improvements on tiles", 
               		"Automation is a primary action"],
 		"cost": 70
-  },
-  {
+  	},
+  	{
 		"name": "Scout",
 		"unitType": "Scout",
 		"movement": 2,
@@ -20,8 +20,8 @@
             		"Never appears as a Barbarian unit"],
 		"promotions": ["Ignore terrain cost"],
 		"attackSound": "nonmetalhit"
-  },
-  {
+  	},
+  	{
 		"name": "Work Boats",
 		"unitType": "Civilian Water",
 		"movement": 4,
@@ -31,8 +31,8 @@
             		"May create improvements on water resources",
             		"Uncapturable",
             		"Automation is a primary action"]
-  },
-  {
+  	},
+  	{
 		"name": "Marine",
 		"unitType": "Scout",
 		"movement": 2,
@@ -40,9 +40,12 @@
 		"cost": 400,
 		"requiredTech": "Pharmaceuticals",
 		"promotions": ["Amphibious"],
-		"uniques": ["[+1] Sight <when [Embarked]>", 
-			"[+1] Movement <when [Embarked]>", 
-			"Defense bonus when embarked"],
+		"uniques": ["[+1] Sight <when [Embarked]>",
+			"[+1] Movement <when [Embarked]>",
+			"[1] Movement point cost to disembark",
+			"[1] Movement point cost to embark",
+			"Defense bonus when embarked",
+			"May attack when embarked"],
 		"attackSound": "shot"
-  },
+  	},
 ]
