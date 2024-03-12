@@ -1,4 +1,6 @@
-"columnNumber": 2,
+[
+	{
+		"columnNumber": 2,
 		"era": "Ancient era",
 		"techCost": 55,
 		"buildingCost": 75,
@@ -8,6 +10,7 @@
 				"name": "Sailing",
 				"row": 1,
 				"prerequisites": ["Pottery"],
+				"uniques": ["Enables embarkation for land units"],
 				"quote": "'He who commands the sea has command of everything.' - Themistocles"
 			},
 			{
@@ -46,3 +49,40 @@
 				"prerequisites": ["Mining"],
 				"quote": "'Here Hector entered, with a spear eleven cubits long in his hand; the bronze point gleamed in front of him, and was fastened to the shaft of the spear by a ring of gold.' - Homer"
 			}
+		]
+	},
+	{
+		"columnNumber": 3,
+		"era": "Classical era",
+		"techCost": 105,
+		"buildingCost": 100,
+		"wonderCost": 250,
+		"techs": [
+			{
+				"name": "Optics",
+				"cost": 85,
+				"row": 1,
+				"prerequisites": ["Sailing"],
+				"quote": "'He made an instrument to know if the moon shine at full or no.' - Samuel Butler"
+			},
+			{
+				"name": "Horseback Riding",
+				"row": 5,
+				"prerequisites": ["Trapping","The Wheel"],
+				"quote": "'A Horse! A Horse! My kingdom for a horse!' - Shakespeare (Richard III)"
+			},
+			{
+				"name": "Mathematics",
+				"row": 7,
+				"prerequisites": ["The Wheel"],
+				"quote": "'Mathematics is the gate and key to the sciences.' - Roger Bacon"
+			},
+			{
+				"name": "Construction",
+				"row": 9,
+				"prerequisites": ["Masonry","The Wheel"],
+				"quote": "'Three things are to be looked to in a building: that it stands on the right spot; that it be securely founded; that it be successfully executed.' - Johann Wolfgang von Goethe"
+			}
+		]
+	},
+]
