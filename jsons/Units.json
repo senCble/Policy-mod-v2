@@ -22,7 +22,7 @@
 		"name": "Work Boats",
 		"unitType": "Civilian Water",
 		"movement": 4,
-		"cost": 30,
+		"cost": 25,
 		"requiredTech": "Sailing",
 		"uniques": ["Cannot enter ocean tiles <before discovering [Astronomy]>", "May create improvements on water resources",
             "Uncapturable", "Automation is a primary action"]
@@ -35,7 +35,7 @@
 		"cost": 400,
 		"requiredTech": "Pharmaceuticals",
 		"promotions": ["Amphibious"],
-		"uniques": ["[+1] Sight <when [Embarked]>", "Defense bonus when embarked"],
+		"uniques": ["[+1] Sight <when [Embarked]>", "[+1] movement <when [Embarked]>", "Defense bonus when embarked"],
 		"attackSound": "shot"
 	},
 ]
