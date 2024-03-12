@@ -1,7 +1,7 @@
 [
-  {
+  	{
 		"name": "Fishing Boats",
-    "turnsToBuild": 6,
+    		"turnsToBuild": 6,
 		"terrainsCanBeBuiltOn": ["Coast"],
 		"food": 1,
 		"techRequired": "Sailing",
