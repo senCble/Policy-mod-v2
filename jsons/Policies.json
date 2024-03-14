@@ -419,7 +419,7 @@
             {
                 "name": "Aesthetics Complete",
                 "uniques": [
-                    "[+2 Culture] from every [Wonder] <during a Golden Age>",
+                    "[+33]% [Culture] [in all cities with a world wonder] <during a Golden Age>",
                     "May buy [Great Artist] units for [1000] [Faith] [in all cities in which the majority religion is a major religion] at an increasing price ([500]) <starting from the [Industrial era]>"
                 ]
             }
