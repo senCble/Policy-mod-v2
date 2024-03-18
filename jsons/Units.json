@@ -41,8 +41,6 @@
 		"requiredTech": "Pharmaceuticals",
 		"promotions": ["Amphibious"],
 		"uniques": ["[+1] Sight <when [Embarked]>",
-			"[+1] Movement <when [Embarked]>",
-			"[1] Movement point cost to disembark",
 			"[1] Movement point cost to embark",
 			"Defense bonus when embarked",
 			"May attack when embarked"],
