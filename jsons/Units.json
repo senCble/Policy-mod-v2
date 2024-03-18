@@ -42,7 +42,7 @@
 		"promotions": ["Amphibious"],
 		"uniques": ["[+1] Sight <when [Embarked]>",
 			"[1] Movement point cost to embark",
-			"Defense bonus when embarked",],
+			"Defense bonus when embarked"],
 		"attackSound": "shot"
   	},
 ]
