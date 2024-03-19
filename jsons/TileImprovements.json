@@ -11,13 +11,13 @@
 	{
 		"name": "Manufactory",
 		"terrainsCanBeBuiltOn": ["Land"],
-		"production": 6,
+		"production": 4,
 		"uniques": ["Great Improvement", "[+2 Production] <after discovering [Chemistry]>", "Removes removable features when built", "Pillaging this improvement yields approximately [+20 Gold]"]
 	},
 	{
 		"name": "Customs house",
 		"terrainsCanBeBuiltOn": ["Land"],
-		"gold": 8,
+		"gold": 6,
 		"uniques": ["Great Improvement", "[+2 Gold] <after discovering [Economics]>",  "[+2 Gold] <after discovering [Electronics]>", "Removes removable features when built", "Pillaging this improvement yields approximately [+20 Gold]"]
 	}
 ]
