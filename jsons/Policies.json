@@ -162,10 +162,8 @@
             {
                 "name": "Warrior Code",
                 "uniques": [
-                    	"[+10]% Production when constructing [Military] units [in all cities]",
-                    	"[+100]% Production when constructing [Barracks] buildings [in all cities]",
-			"[+100]% Production when constructing [Armory] buildings [in all cities]",
-			"[+100]% Production when constructing [Military Academy] wonders [in all cities]"
+                    "[+100]% Production when constructing [Barracks] buildings [in all cities]",
+		    "[+15]% Production when constructing [Military] units [in all cities]",
                 ],
                 "row": 1,
                 "column": 4
@@ -173,8 +171,8 @@
             {
                 "name": "Discipline",
                 "uniques": [
-                    	"[+15]% Strength <for [Melee] units> <when adjacent to a [Melee] unit>",
-			"Free [Great General] appears"
+                    "[+15]% Strength <for [Melee] units> <when adjacent to a [Military] unit>",
+		    "Free [Great General] appears"
                 ],
                 "row": 1,
                 "column": 2
@@ -191,7 +189,8 @@
             {
                 "name": "Military Caste",
                 "uniques": [
-                    "[+1 Happiness, +2 Culture] [in all cities with a garrison]"
+                    "[+1 Happiness, +2 Culture] from every [Barracks]",
+		    "Gain a free [Barracks] [in puppeted cities]",
                 ],
                 "requires": ["Warrior Code"],
                 "row": 2,
@@ -200,9 +199,9 @@
             {
                 "name": "Professional Army",
                 "uniques": [
-                    "[-33]% Gold cost of upgrading <for [Military] units>",
-                    "[+2 Happiness] from every [Courthouse]",
-                    "[+100]% Production when constructing [Courthouse] buildings [in all cities]"
+                    "[-50]% Gold cost of upgrading <for [Military] units>",
+		    "[-25]% construction time for [Road] improvements",
+		    "[-25]% maintenance on road & railroads"   
 		],
                 "requires": ["Military Caste"],
                 "row": 3,
@@ -212,6 +211,7 @@
                 "name": "Honor Complete",
                 "uniques": [
                     "Earn [100]% of killed [Military] unit's [Strength] as [Gold]",
+		    "[+100]% Production when constructing [Courthouse] buildings [in all cities]",
                     "May buy [Great General] units for [1000] [Faith] [in all cities in which the majority religion is a major religion] at an increasing price ([500]) <starting from the [Industrial era]>",
                 ]
             }
@@ -576,10 +576,9 @@
             "Scientific": 10
         },
         "uniques": [
-                     "[+1 Culture] from every [Walls]",
-                     "[+1 Culture] from every [Castle]",
-                     "[+1 Culture] from every [Arsenal]",
-		     "[+1 Culture] from every [Military Base]"
+		"[+100]% Production when constructing [Walls] buildings [in all cities]",
+		"[+100]% Production when constructing [Castle] buildings [in all cities]",
+		"[+100]% Production when constructing [Armory] buildings [in all cities]",
         ],
         "policies": [
             {
@@ -598,10 +597,9 @@
             {
                 "name": "Feudalism",
                 "uniques": [
-        	    "[+1 Food, +1 Science] from every [Walls]",
-                    "[+1 Food, +1 Science] from every [Castle]",
-                    "[+1 Food, +1 Science] from every [Arsenal]",
-	  	    "[+1 Food, +1 Science] from every [Military Base]"
+		    "[+1 Science, +1 Culture] from every [Walls]",
+		    "[+1 Science, +1 Culture] from every [Castle]",
+		    "[+1 Science, +1 Culture] from every [Armory]",
                 ],
                 "row": 1,
                 "column": 4
@@ -619,9 +617,8 @@
                 "name": "Fortified Borders",
                 "uniques": [
 		    "[+1 Happiness] from every [Walls]",
-                    "[+1 Happiness] from every [Castle]",
-                    "[+1 Happiness] from every [Arsenal]",
-		    "[+1 Happiness] from every [Military Base]"
+		    "[+1 Happiness] from every [Castle]",
+                    "[+1 Happiness] from every [Armory]",
                 ],
                 "requires": ["Divine Rule","Knightly Order"],
                 "row": 3,
@@ -794,9 +791,9 @@
             {
                 "name": "Militarism",
                 "uniques": [
-                    "[+1 Happiness] from every [Barracks]",
-                    "[+1 Happiness] from every [Armory]",
-                    "[+1 Happiness] from every [Military Academy]"],
+                    "[+1 Happiness] from every [Arsenal]",
+		    "[+1 Happiness] from every [Military Academy]",
+                    "[+1 Happiness] from every [Military Base]",
                 "row": 1,
                 "column": 4
             },
@@ -804,7 +801,7 @@
                 "name": "Fascism",
                 "uniques": [
                     "Quantity of strategic resources produced by the empire +[100]%",
-                    "[+1] Movement <for [All] units>"
+                    "[+1] Movement <for [Armored] units>"
                 ],
                 "requires": ["Populism", "Militarism"],
                 "row": 2,
@@ -814,7 +811,8 @@
                 "name": "Police State",
                 "uniques": [
                     "[Gold] cost of purchasing [Military] units [-33]%",
-                    "[Gold] cost of purchasing [Courthouse] buildings [-50]%"
+                    "[Gold] cost of purchasing [Courthouse] buildings [-50]%",
+		    "[+3 Happiness] from every [Courthouse]"
                 ],
                 // There are also some uniques regarding espoinage, which as of this writing is not yet implemented
                 "requires": ["Militarism"],
