@@ -789,17 +789,17 @@
             {
                 "name": "Militarism",
                 "uniques": [
-                    "[+1 Happiness] from every [Arsenal]",
-		    "[+1 Happiness] from every [Military Academy]",
-                    "[+1 Happiness] from every [Military Base]",
+                    "[Gold] cost of purchasing [Military] units [-33]%",
+		    "[Gold] cost of purchasing [Courthouse] buildings [-50]%",
                 "row": 1,
                 "column": 4
             },
             {
                 "name": "Fascism",
                 "uniques": [
-                    "Quantity of strategic resources produced by the empire +[100]%",
-                    "[+1] Movement <for [Armored] units>"
+                    "Quantity of strategic resources produced by the empire +[50]%",
+		    "[+2] Movement <for [Great General] units>",
+                    "[Armored] units gain the [Ignore Zone of Control] promotion>"
                 ],
                 "requires": ["Populism", "Militarism"],
                 "row": 2,
@@ -808,9 +808,8 @@
             {
                 "name": "Police State",
                 "uniques": [
-                    "[Gold] cost of purchasing [Military] units [-33]%",
 		    "[+100]% Production when constructing [Courthouse] buildings [in all cities]",
-                    "[Gold] cost of purchasing [Courthouse] buildings [-50]%",
+		    "[+3 Happiness] from every [Courthouse]",
                 ],
                 // There are also some uniques regarding espoinage, which as of this writing is not yet implemented
                 "requires": ["Militarism"],
