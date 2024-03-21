@@ -162,8 +162,9 @@
             {
                 "name": "Warrior Code",
                 "uniques": [
-                    "[+100]% Production when constructing [Barracks] buildings [in all cities]",
-		    "[+15]% Production when constructing [Military] units [in all cities]",
+                    "[+15]% Production when constructing [Military] units [in all cities]",
+		    "[+100]% Production when constructing [Barracks] buildings [in all cities]",
+		    "[+100]% Production when constructing [Walls] buildings [in all cities]"
                 ],
                 "row": 1,
                 "column": 4
@@ -172,6 +173,7 @@
                 "name": "Discipline",
                 "uniques": [
                     "[+15]% Strength <for [Melee] units> <when adjacent to a [Military] unit>",
+		    "[+15]% Strength <for [WaterMelee] units> <when adjacent to a [Military] unit>",
 		    "Free [Great General] appears"
                 ],
                 "row": 1,
@@ -189,8 +191,8 @@
             {
                 "name": "Military Caste",
                 "uniques": [
-                    "[+1 Happiness, +2 Culture] from every [Barracks]",
-		    "Gain a free [Barracks] [in puppeted cities]",
+                    "[+1 Happiness, +2 Culture] from every [Walls]",
+		    "Gain a free [Walls] [in puppeted cities]",
                 ],
                 "requires": ["Warrior Code"],
                 "row": 2,
@@ -399,7 +401,6 @@
             {
                 "name": "Tourism Destination",
                 "uniques": [
-                    "[50]% of excess happiness converted to [Science]",
                     "[50]% of excess happiness converted to [Culture]",
                 ],
                 "row": 1,
@@ -575,10 +576,11 @@
             "Domination": 20,
             "Scientific": 10
         },
-        "uniques": [
-		"[+100]% Production when constructing [Walls] buildings [in all cities]",
-		"[+100]% Production when constructing [Castle] buildings [in all cities]",
+        "uniques": [,
 		"[+100]% Production when constructing [Armory] buildings [in all cities]",
+		"[+100]% Production when constructing [Castle] buildings [in all cities]",
+		"[+1 Culture] from every [Armory]",
+		"[+1 Culture] from every [Castle]",
         ],
         "policies": [
             {
@@ -597,9 +599,8 @@
             {
                 "name": "Feudalism",
                 "uniques": [
-		    "[+1 Science, +1 Culture] from every [Walls]",
-		    "[+1 Science, +1 Culture] from every [Castle]",
-		    "[+1 Science, +1 Culture] from every [Armory]",
+		    "[+3 Science] from every [Armory]",
+		    "[+2 Food] from every [Castle]",
                 ],
                 "row": 1,
                 "column": 4
@@ -616,9 +617,8 @@
             {
                 "name": "Fortified Borders",
                 "uniques": [
-		    "[+1 Happiness] from every [Walls]",
-		    "[+1 Happiness] from every [Castle]",
-                    "[+1 Happiness] from every [Armory]",
+		    "[+1 Happiness, +1 Culture] from every [Armory]",
+                    "[+1 Happiness, +1 Culture] from every [Castle]",
                 ],
                 "requires": ["Divine Rule","Knightly Order"],
                 "row": 3,
