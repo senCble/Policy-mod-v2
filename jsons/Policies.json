@@ -164,7 +164,6 @@
                 "uniques": [
                     "[+15]% Production when constructing [Military] units [in all cities]",
 		    "[+100]% Production when constructing [Barracks] buildings [in all cities]",
-		    "[+100]% Production when constructing [Walls] buildings [in all cities]"
                 ],
                 "row": 1,
                 "column": 4
@@ -173,7 +172,7 @@
                 "name": "Discipline",
                 "uniques": [
                     "[+15]% Strength <for [Melee] units> <when adjacent to a [Military] unit>",
-		    "[+15]% Strength <for [WaterMelee] units> <when adjacent to a [Military] unit>",
+		    "[+15]% Strength <for [Gunpowder] units> <when adjacent to a [Military] unit>",
 		    "Free [Great General] appears"
                 ],
                 "row": 1,
@@ -201,9 +200,9 @@
             {
                 "name": "Professional Army",
                 "uniques": [
-                    "[-50]% Gold cost of upgrading <for [Military] units>",
-		    "[-25]% construction time for [Road] improvements",
-		    "[-25]% maintenance on road & railroads"   
+                    "[-33]% Gold cost of upgrading <for [Military] units>",
+		    "[-17]% maintenance costs <for [Military] units>",
+		    "[+1 Happiness] from every [Barracks]"   
 		],
                 "requires": ["Military Caste"],
                 "row": 3,
@@ -213,7 +212,7 @@
                 "name": "Honor Complete",
                 "uniques": [
                     "Earn [100]% of killed [Military] unit's [Strength] as [Gold]",
-		    "[+100]% Production when constructing [Courthouse] buildings [in all cities]",
+		    "Earn [25]% of killed [Miltiary] unit's [Strength] as [Science]",
                     "May buy [Great General] units for [1000] [Faith] [in all cities in which the majority religion is a major religion] at an increasing price ([500]) <starting from the [Industrial era]>",
                 ]
             }
@@ -811,8 +810,8 @@
                 "name": "Police State",
                 "uniques": [
                     "[Gold] cost of purchasing [Military] units [-33]%",
+		    "[+100]% Production when constructing [Courthouse] buildings [in all cities]",
                     "[Gold] cost of purchasing [Courthouse] buildings [-50]%",
-		    "[+3 Happiness] from every [Courthouse]"
                 ],
                 // There are also some uniques regarding espoinage, which as of this writing is not yet implemented
                 "requires": ["Militarism"],
