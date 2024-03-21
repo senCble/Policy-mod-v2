@@ -163,7 +163,8 @@
                 "name": "Warrior Code",
                 "uniques": [
                     "[+15]% Production when constructing [Military] units [in all cities]",
-		    "[+100]% Production when constructing [Barracks] buildings [in all cities]",
+		    "Free [Great General] appears",
+		    "[Great General] is earned [50]% faster"
                 ],
                 "row": 1,
                 "column": 4
@@ -173,7 +174,6 @@
                 "uniques": [
                     "[+15]% Strength <for [Melee] units> <when adjacent to a [Military] unit>",
 		    "[+15]% Strength <for [Gunpowder] units> <when adjacent to a [Military] unit>",
-		    "Free [Great General] appears"
                 ],
                 "row": 1,
                 "column": 2
@@ -200,8 +200,8 @@
             {
                 "name": "Professional Army",
                 "uniques": [
-                    "[-33]% Gold cost of upgrading <for [Military] units>",
-		    "[-17]% maintenance costs <for [Military] units>",
+                    "[-50]% Gold cost of upgrading <for [Military] units>",
+		    "[+100]% Production when constructing [Barracks] buildings [in all cities]",
 		    "[+1 Happiness] from every [Barracks]"   
 		],
                 "requires": ["Military Caste"],
@@ -635,8 +635,7 @@
             {
                 "name": "Nobility Complete",
                 "uniques": [
-                     "Can spend Gold to annex or puppet a City-State that has been your ally for [10] turns.",
-		     "[Great General] is earned [50]% faster",
+                     "Can spend Gold to annex or puppet a City-State that has been your ally for [10] turns."
                 ]
             }
         ]
