@@ -2,7 +2,7 @@
 
 {
 		"name": "Great Admiral",
-		"uniques": ["[+3] Movement <when [Embarked]>", "[1] Movement point cost to embark"]
+		"uniques": ["[+3] Movement <when [Embarked]>"]
 	},
 {
 		"name": "Ignore Zone of Control",
