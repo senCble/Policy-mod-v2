@@ -1,5 +1,4 @@
 [
-
 {
 		"name": "Great Admiral",
 		"uniques": ["[+3] Movement <when [Embarked]>"]
@@ -11,5 +10,9 @@
 {
 		"name": "Knightly Order",
 		"uniques": ["Religious Unit", "Can Spread Religion <for [4] movement> <[1] times>", "All adjacent units heal [+10] HP when healing"]
+	},
+{
+		"name": "Prized Ships",
+		"uniques":["May capture killed [Water] units"]
 	},
 ]
