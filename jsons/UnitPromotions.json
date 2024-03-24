@@ -12,7 +12,7 @@
 		"uniques": ["Religious Unit", "Can Spread Religion <for [4] movement> <[1] times>", "All adjacent units heal [+10] HP when healing"]
 	},
 {
-		"name": "Prized Ships",
+		"name": "Prize Ships",
 		"uniques":["May capture killed [Water] units"]
 	},
 ]
