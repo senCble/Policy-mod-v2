@@ -6,7 +6,7 @@
 		"unitTypes": ["Sword","Gunpowder","Mounted","Scout","Siege","Archery","Ranged Gunpowder","Armored","Melee Water","Ranged Water","Submarine"],
         "row": 0,
         "column": 0
-    	},
+    },
 
 	// Ranged+Siege
 	{
@@ -15,7 +15,7 @@
 		"unitTypes": ["Siege","Archery","Ranged Gunpowder"],
         "column": 1,
         "row": 1
-    	},
+    },
 	{
 		"name": "Accuracy II",
 		"prerequisites": ["Accuracy I"],
@@ -23,7 +23,7 @@
 		"unitTypes": ["Siege","Archery","Ranged Gunpowder"],
         "column": 1,
         "row": 2
-    	},
+    },
 	{
 		"name": "Accuracy III",
 		"prerequisites": ["Accuracy II"],
@@ -31,7 +31,7 @@
 		"unitTypes": ["Siege","Archery","Ranged Gunpowder"],
         "column": 1,
         "row": 3
-    	},
+    },
 
 	{
 		"name": "Barrage I",
@@ -707,10 +707,10 @@
 		"name": "Home Sweet Home", // only for Mehal Sefari and subsequent upgrades
 		"uniques": ["[+30]% Strength decreasing with distance from the capital"]
 	},
-    	{
-        	"name": "Devout",
-        	"uniques": ["Can Spread Religion <[1] additional time(s)>"]
-    	},
+    {
+        "name": "Devout",
+        "uniques": ["Can Spread Religion <[1] additional time(s)>"]
+    },
 	{
 		"name": "[Mohawk Warrior] ability",
 		"uniques": ["[+33]% Strength <when fighting in [Forest] tiles>", "[+33]% Strength <when fighting in [Jungle] tiles>"]
@@ -775,5 +775,9 @@
 	{
 		"name": "Knightly Order",
 		"uniques": ["Religious Unit", "Can Spread Religion <for [4] movement> <[1] times>", "All adjacent units heal [+10] HP when healing"]
+	},
+	{
+		"name": "Prize Ships",
+		"uniques": ["May capture killed [Water] units"]
 	},
 ]
