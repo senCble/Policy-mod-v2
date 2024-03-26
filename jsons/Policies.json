@@ -791,7 +791,7 @@
                 "uniques": [
                     "[Gold] cost of purchasing [Military] units [-33]%",
 		    "Quantity of strategic resources produced by the empire +[50]%",
-		    
+		],
                 "row": 1,
                 "column": 4
             },
