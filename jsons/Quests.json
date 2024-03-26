@@ -50,7 +50,7 @@
     "name": "Conquer City State",
     "description": "It's time to erase the City-State of [cityState] from the map. You will be greatly rewarded for conquering them!",
     "influence": 80,
-    "duration": 15
+    "duration": 30
       "weightForCityStateType": {
           "Hostile": 2,
           "Friendly": 0.2,
@@ -153,7 +153,7 @@
   {
     "name": "Bully City State",
     "description": "We are tired of the pretensions of [cityState]. If someone were to put them in their place by Demanding Tribute from them, they would be rewarded.",
-    "duration": 15,
+    "duration": 30,
       "weightForCityStateType": {
           "Hostile": 2,
           "Irrational": 1.5,
