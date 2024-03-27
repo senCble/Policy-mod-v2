@@ -382,7 +382,7 @@
                 "name": "Cultural Centers",
                 "uniques": [
 		    "[+1 Happiness] from every [National Wonder]",
-		    "[+2 Happiness] [in all cities with a world wonder]"
+		    "[+1 Happiness] [in all cities with a world wonder]"
                 ],
                 "row": 1,
                 "column": 2
