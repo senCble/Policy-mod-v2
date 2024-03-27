@@ -220,25 +220,25 @@
     },
     {
         "name": "Piety",
-        "era": "Ancient era",
+        "era": "Classical era",
         "priorities": {
             "Neutral": 0,
             "Cultural": 10,
-            "Diplomatic": 10,
+            "Diplomatic": 0,
             "Domination": 10,
-            "Scientific": 0
+            "Scientific": 10
         },
         "uniques": [
-		"[+100]% Production when constructing [Shrine] buildings [in all cities]",
-		"[+100]% Production when constructing [Temple] buildings [in all cities]",
-		"[+100]% Production when constructing [Grand Temple] wonders [in all cities]"
+		"[+100]% Production when constructing [Temple] wonders [in all cities]",
+		"[+100]% Production when constructing [Armory] buildings [in all cities]",
+		"[+100]% Production when constructing [Castle] buildings [in all cities]",
         ],
         "policies": [
             {
                 "name": "Organized Religion",
                 "uniques": [
-                    "[+1 Faith] from every [Shrine]",
-                    "[+1 Happiness] from every [Shrine]",
+		    "[+1 Happiness, +1 Culture] from every [Armory]",
+                    "[+1 Happiness, +1 Culture] from every [Castle]",
                 ],
                 "row": 1,
                 "column": 3
@@ -247,7 +247,7 @@
                 "name": "Mandate Of Heaven",
                 "uniques": [
 		    "[+1 Faith] from every [Temple]",
-		    "Gain a free [Pantheon] belief <after founding a Pantheon>", 
+		    "[Faith] cost of purchasing items in cities [-20]%",
                 ],
 		"requires": ["Organized Religion"],
                 "row": 2,
@@ -265,9 +265,9 @@
             },
             {
                 "name": "Free Religion",
-                "uniques": [
-                    "[Faith] cost of purchasing items in cities [-20]%",  
-		    "[+3 Culture] from every [Holy site]",
+                "uniques": [  
+		    "[+1 Food] from every [Pasture]",
+		    "[+3 Culture] from every [Holy site]"
                 ],
                 "requires": ["Mandate Of Heaven"],
                 "row": 3,
@@ -276,8 +276,8 @@
             {
                 "name": "Reformation",
                 "uniques": [
-                    "[+2 Production] from every [Temple]",
-                    "[+3 Science] from every [Holy site]"
+		    "[+2 Production] from every [Armory]",
+		    "[+2 Science] from every [Castle]"
                 ],
                 "requires": ["Mandate Of Heaven", "Theocracy"],
                 "row": 3,
@@ -286,8 +286,10 @@
             {
                 "name": "Piety Complete",
                 "uniques": [
-                    "Provides a [Garden] in your first [4] cities for free",
-                    "Free [Great Prophet] appears"
+                    "Free [Great Prophet] appears",
+		    "[+10]% [Production] from every [Armory] <during We Love The King Day>",
+		    "[+10]% [Science]  from every [Castle] <during We Love The King Day>",
+		    "[+10]% [Faith] from every [Temple] <during We Love The King Day>",
                 ]
             }
         ]
@@ -365,24 +367,38 @@
         "priorities": {
             "Neutral": 0,
             "Cultural": 20,
-            "Diplomatic": 10,
+            "Diplomatic": 0,
             "Domination": 0,
-            "Scientific": 10
+            "Scientific": 0
         },
-        "uniques": ["[+15]% Production when constructing [All] wonders [in all cities]",],
-		"policies": [
+        "uniques": [
+		"[+100]% Production when constructing [Amphitheater] buildings [in all cities]",
+                "[+100]% Production when constructing [Opera House] buildings [in all cities]",
+                "[+100]% Production when constructing [Museum] buildings [in all cities]",
+                "[+100]% Production when constructing [Broadcast Tower] buildings [in all cities]",
+	],
+	"policies": [
             {
                 "name": "Cultural Centers",
                 "uniques": [
-		    "[+1 Happiness] from every [Wonder]"
+		    "[+1 Happiness] from every [National Wonder]",
+		    "[+2 Happiness] [in all cities with a world wonder]"
                 ],
                 "row": 1,
                 "column": 2
             },
+	    {
+                "name": "Tourism Destination",
+                "uniques": [
+                    "[50]% of excess happiness converted to [Culture]",
+                ],
+                "row": 1,
+                "column": 4
+            },
             {
                 "name": "Monumentality",
                 "uniques": [
-                    "[+50]% Golden Age length",  
+		    "[+33]% [Culture] [in all cities with a world wonder]",  
                 ],
 		"requires": ["Cultural Centers"],
                 "row": 2,
@@ -391,19 +407,12 @@
             {
                 "name": "Cultural Exchange",
                 "uniques": [
-                    "[+25]% Great Person generation [in all cities] <during a Golden Age>"
+                    "[Great Artist] is earned [25]% faster",
+		    "Empire enters golden age",
                 ],
                 "requires": ["Monumentality"],
                 "row": 3,
                 "column": 2
-            },
-            {
-                "name": "Tourism Destination",
-                "uniques": [
-                    "[50]% of excess happiness converted to [Culture]",
-                ],
-                "row": 1,
-                "column": 4
             },
             {
                 "name": "Artistic Genius",
@@ -417,7 +426,7 @@
             {
                 "name": "Aesthetics Complete",
                 "uniques": [
-                    "[+33]% [Culture] [in all cities with a world wonder]",
+                    "[-10]% Culture cost of adopting new Policies",
                     "May buy [Great Artist] units for [1000] [Faith] [in all cities in which the majority religion is a major religion] at an increasing price ([500]) <starting from the [Industrial era]>"
                 ]
             }
