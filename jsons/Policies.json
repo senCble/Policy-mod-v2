@@ -6,14 +6,15 @@
         "era": "Ancient era",
         "priorities": {
             "Neutral": 0,
-            "Cultural": 10,
-            "Diplomatic": 10,
+            "Cultural": 20,
+            "Diplomatic": 20,
             "Domination": 0,
             "Scientific": 10
         },
         "uniques": [
             "[+3 Culture] [in capital]",
-            "[-25]% Culture cost of natural border growth [in all cities]"
+            "[-25]% Culture cost of natural border growth [in all cities]",
+	    "Only available <before adopting [Liberty]>"
         ],
         "policies": [
             {
@@ -76,14 +77,15 @@
         "era": "Ancient era",
         "priorities": {
             "Neutral": 10,
-            "Cultural": 10,
-            "Diplomatic": 10,
+            "Cultural": 20,
+            "Diplomatic": 20,
             "Domination": 10,
             "Scientific": 10
         },
         "uniques": [
 		"[+1 Culture] [in all cities]",
 		"[+1 Happiness] [in capital]",
+		"Only available <before adopting [Tradition]>"
 	],
         "policies": [
             {
@@ -149,21 +151,22 @@
         "priorities": {
             "Neutral": 0,
             "Cultural": 0,
-            "Diplomatic": 10,
+            "Diplomatic": 0,
             "Domination": 10,
             "Scientific": 0
         },
         "uniques": [
-            "[+33]% Strength <vs [Barbarian] units>",
+            "[+25]% Strength <vs [Barbarian] units>",
             "Earn [100]% of killed [Barbarian] unit's [Strength] as [Culture]",
+	    "Earn [25]% of killed [non-[Barbarian]] unit's [Strength] as [Culture]",
             "Notified of new Barbarian encampments"
         ],
         "policies": [
             {
                 "name": "Warrior Code",
                 "uniques": [
-                    "[+15]% Production when constructing [Military] units [in all cities]",
-		    "[+100]% Production when constructing [Barracks] buildings [in all cities]",
+                    "[+15]% Production when constructing [{Military} {Land}] units [in all cities]",
+		    "[+50]% Production when constructing [Barracks] buildings [in all cities]",
 		    "Free [Great General] appears",
                 ],
                 "row": 1,
@@ -172,8 +175,9 @@
             {
                 "name": "Discipline",
                 "uniques": [
-                    "[+15]% Strength <for [Melee] units> <when adjacent to a [Military] unit>",
+                    "[+15]% Strength <for [Sword] units> <when adjacent to a [Military] unit>",
 		    "[+15]% Strength <for [Gunpowder] units> <when adjacent to a [Military] unit>",
+		    "[Great General] is earned [25]% faster",
                 ],
                 "row": 1,
                 "column": 2
@@ -190,8 +194,8 @@
             {
                 "name": "Military Caste",
                 "uniques": [
-                    "[+1 Happiness, +2 Culture] from every [Walls]",
-		    "Gain a free [Walls] [in puppeted cities]",
+                    "[+1 Happiness, +2 Culture] from every [Barracks]",
+		    "Gain a free [Barracks] [in puppeted cities]"
                 ],
                 "requires": ["Warrior Code"],
                 "row": 2,
@@ -200,9 +204,9 @@
             {
                 "name": "Professional Army",
                 "uniques": [
+		    "[+50]% Production when constructing [Walls] buildings [in all cities]",
+		    "[+1 Happiness] from every [Walls]",
                     "[-33]% Gold cost of upgrading <for [Military] units>",
-		    "[-17]% maintenance costs <for [All] units>",
-		    "[+1 Happiness] from every [Barracks]"   
 		],
                 "requires": ["Military Caste"],
                 "row": 3,
@@ -212,7 +216,6 @@
                 "name": "Honor Complete",
                 "uniques": [
                     "Earn [100]% of killed [Military] unit's [Strength] as [Gold]",
-		    "[Great General] is earned [50]% faster",
                     "May buy [Great General] units for [1000] [Faith] [in all cities in which the majority religion is a major religion] at an increasing price ([500]) <starting from the [Industrial era]>",
                 ]
             }
@@ -229,16 +232,16 @@
             "Scientific": 10
         },
         "uniques": [
+		"[+50]% Production when constructing [Armory] buildings [in all cities]",
+		"[+50]% Production when constructing [Castle] buildings [in all cities]",
 		"[+100]% Production when constructing [Temple] wonders [in all cities]",
-		"[+100]% Production when constructing [Armory] buildings [in all cities]",
-		"[+100]% Production when constructing [Castle] buildings [in all cities]",
         ],
         "policies": [
             {
                 "name": "Organized Religion",
                 "uniques": [
-		    "[+1 Happiness, +1 Culture] from every [Armory]",
-                    "[+1 Happiness, +1 Culture] from every [Castle]",
+		    "[+2 Culture] from every [Temple]",
+		    "[+2 Faith] from every [Temple]",
                 ],
                 "row": 1,
                 "column": 2
@@ -246,10 +249,9 @@
             {
                 "name": "Mandate Of Heaven",
                 "uniques": [
-		    "[+1 Faith] from every [Temple]",
-		    "[Faith] cost of purchasing items in cities [-20]%",
+		    "[+1 Happiness] from every [Armory]",
+                    "[+1 Happiness] from every [Castle]"
                 ],
-		"requires": ["Organized Religion"],
                 "row": 1,
                 "column": 5
             },
@@ -266,12 +268,12 @@
             {
                 "name": "Free Religion",
                 "uniques": [  
-		    "[+1 Food] from every [Pasture]",
+		    "[Faith] cost of purchasing items in cities [-20]%",
 		    "[+3 Culture] from every [Holy site]"
                 ],
-                "requires": ["Mandate Of Heaven", "Reformation"],
-                "row": 3,
-                "column": 4
+                "requires": ["Organized Religion"],
+                "row": 2,
+                "column": 3
             },
             {
                 "name": "Reformation",
@@ -279,17 +281,17 @@
 		    "[+2 Production] from every [Armory]",
 		    "[+2 Science] from every [Castle]"
                 ],
-                "requires": ["Organized Religion"],
-                "row": 2,
-                "column": 3
+                "requires": ["Mandate Of Heaven", "Free Religion"],
+                "row": 3,
+                "column": 4
             },
             {
                 "name": "Piety Complete",
                 "uniques": [
                     "Free [Great Prophet] appears",
-		    "[+15]% [Production] from every [Armory] <during We Love The King Day>",
-		    "[+15]% [Science]  from every [Castle] <during We Love The King Day>",
-		    "[+15]% [Faith] from every [Temple] <during We Love The King Day>",
+		    "[+10]% [Production] [in all cities] <during We Love The King Day>",
+		    "[+10]% [Science] [in all cities] <during We Love The King Day>",
+		    "[+10]% [Faith] [in all cities] <during We Love The King Day>",
                 ]
             }
         ]
@@ -304,12 +306,14 @@
             "Domination": 0,
             "Scientific": 10
         },
-        "uniques": ["[-25]% City-State Influence degradation"],
+        "uniques": [
+		"[-25]% City-State Influence degradation",
+	],
         "policies": [
             {
                 "name": "Philantropy",
                 "uniques": [
-                    "Gifts of Gold to City-States generate [25]% more Influence"
+                    "Gifts of Gold to City-States generate [33]% more Influence"
                 ],
                 "row": 1,
                 "column": 2
@@ -325,11 +329,12 @@
             {
                 "name": "Scholasticism",
                 "uniques": [
-                    "Allied City-States provide [Science] equal to [50]% of what they produce for themselves"
+                    "Allied City-States provide [Science] equal to [25]% of what they produce for themselves",
+		    "Allied City-States provide [Culture] equal to [25]% of what they produce for themselves",
                 ],
-                "requires": ["Philantropy"],
+                "requires": ["Philantropy","Consulates"],
                 "row": 2,
-                "column": 2
+                "column": 3
             },
             {
                 "name": "Cultural Diplomacy",
@@ -343,7 +348,7 @@
             },
             {
                 "name": "Educated Elite",
-                "requires": ["Scholasticism", "Consulates"],
+                "requires": ["Scholasticism"],
                 "uniques": [
                     "Allied City-States will occasionally gift Great People"
                 ],
@@ -370,10 +375,10 @@
             "Scientific": 0
         },
         "uniques": [
-		"[+100]% Production when constructing [Amphitheater] buildings [in all cities]",
-                "[+100]% Production when constructing [Opera House] buildings [in all cities]",
-                "[+100]% Production when constructing [Museum] buildings [in all cities]",
-                "[+100]% Production when constructing [Broadcast Tower] buildings [in all cities]",
+		"[+50]% Production when constructing [Amphitheater] buildings [in all cities]",
+                "[+50]% Production when constructing [Opera House] buildings [in all cities]",
+                "[+50]% Production when constructing [Museum] buildings [in all cities]",
+                "[+50]% Production when constructing [Broadcast Tower] buildings [in all cities]",
 	],
 	"policies": [
             {
@@ -396,7 +401,8 @@
             {
                 "name": "Monumentality",
                 "uniques": [
-		    "[+33]% [Culture] [in all cities with a world wonder]",  
+		    "[+1 Culture] from every [National Wonder]",
+		    "[+20]% [Culture] [in all cities with a world wonder]",  
                 ],
 		"requires": ["Cultural Centers"],
                 "row": 2,
@@ -415,7 +421,7 @@
                 "name": "Cultural Exchange",
                 "uniques": [
                     "[Great Artist] is earned [25]% faster",
-		    "Empire enters golden age",
+		    "[+25]% Golden Age length"
                 ],
                 "requires": ["Monumentality"],
                 "row": 3,
@@ -425,6 +431,7 @@
                 "name": "Aesthetics Complete",
                 "uniques": [
                     "[-10]% Culture cost of adopting new Policies",
+		    "Empire enters golden age",
                     "May buy [Great Artist] units for [1000] [Faith] [in all cities in which the majority religion is a major religion] at an increasing price ([500]) <starting from the [Industrial era]>"
                 ]
             }
@@ -440,61 +447,63 @@
             "Domination": 20,
             "Scientific": 10
         },
-        "uniques": ["[+25]% [Gold] [in capital]"],
+        "uniques": [
+		"[+25]% [Gold] [in capital]",
+	],
         "policies": [
-            {
-                "name": "Mercenary Army",
+	    {
+                "name": "Trade Unions",
                 "uniques": [
-                    "Militaristic City-States grant units [2] times as fast when you are at war with a common nation"
+                    "[+1 Culture, +2 Gold] from each Trade Route",
+                    "[-50]% maintenance on road & railroads"
                 ],
                 "row": 1,
                 "column": 2
             },
-            {
-                "name": "Trade Unions",
+	    {
+                "name": "Mercantilism",
                 "uniques": [
-                    "[+2 Gold] from each Trade Route",
-                    "[-50]% maintenance on road & railroads"
+		    "[+1 Science] from every [Trading post]",
+                    "[+5]% [Science] from every [Market]",
+		    "[+5]% [Science] from every [Bank]",
+		    "[+7]% [Science] from every [Stock Exchange]",
                 ],
                 "row": 1,
                 "column": 4
             },
             {
-                "name": "Entrepreneurship",
+                "name": "Mercenary Army",
                 "uniques": [
-                    "[+100]% Gold from Great Merchant trade missions",
-                    "Free [Great Merchant] appears"
+		    "[Gold] cost of purchasing items in cities [-25]%",
+                    "Militaristic City-States grant units [2] times as fast when you are at war with a common nation",
                 ],
-                "requires": ["Mercenary Army"],
+		"requires": ["Trade Unions"],
                 "row": 2,
                 "column": 2
             },
-            {
-                "name": "Mercantilism",
+	    {
+                "name": "Entrepreneurship",
                 "uniques": [
-                    "[Gold] cost of purchasing items in cities [-25]%",
-                    "[+2 Science] from every [Mint]",
-                    "[+2 Science] from every [Market]",
-                    "[+2 Science] from every [Bank]",
-                    "[+2 Science] from every [Stock Exchange]"
+		    "[+1 Gold] from every specialist [in all cities]",
+		    "[Great Merchant] is earned [25]% faster",
                 ],
-                "requires": ["Trade Unions"],
+		"requires": ["Mercantilism","Trade Unions"],
                 "row": 2,
                 "column": 4
             },
             {
                 "name": "Protectionism",
                 "uniques": ["[+2] Happiness from each type of luxury resource"],
-                "requires": ["Mercantilism"],
+                "requires": ["Mercenary Army"],
                 "row": 3,
-                "column": 4
+                "column": 2
             },
             {
                 "name": "Commerce Complete",
                 "uniques": [
-                    	"[+1 Gold] from every [Trading post]",
-			"[+1 Gold] from every [Specialist]",
-                    	"May buy [Great Merchant] units for [1000] [Faith] [in all cities in which the majority religion is a major religion] at an increasing price ([500]) <starting from the [Industrial era]>"
+                    "[+2 Gold] from every [Trading post]",
+		    "[+100]% Gold from Great Merchant trade missions",
+                    "May buy [Great Merchant] units for [1000] [Faith] [in all cities in which the majority religion is a major religion] at an increasing price ([500]) <starting from the [Industrial era]>"
                 ]
             }
         ]
@@ -505,68 +514,71 @@
         "priorities": {
             "Neutral": 0,
             "Cultural": 0,
-            "Diplomatic": 10,
+            "Diplomatic": 0,
             "Domination": 20,
             "Scientific": 0
         },
         "uniques": [
             "[+1] Movement <for [{Military} {Water}] units>",
-            "[+1] Sight <for [{Military} {Water}] units>"
+            "[+1] Sight <for [{Military} {Water}] units>",
         ],
         "policies": [
             {
                 "name": "Maritime Infrastructure",
                 "uniques": [
-                    "[+3 Production] [in all coastal cities]",
+                    "[+1 Production, +1 Science] from every [Coast]",
                 ],
                 "row": 1,
-                "column": 1
+                "column": 2
             },
             {
                 "name": "Naval Tradition",
                 "uniques": [
-                    "[+1 Culture, +1 Happiness] from every [Lighthouse]",
-                    "[+1 Culture, +1 Happiness] from every [Harbor]",
-                    "[+1 Culture, +1 Happiness] from every [Seaport]",
+		    "[+2 Happiness] [in all cities] <within [2] tiles of a [Fort]>",
+		    "[+3 Science] from every [Citadel]",
                 ],
                 "row": 1,
-                "column": 3
+                "column": 4
             },
-            {
+	    {
                 "name": "Merchant Navy",
                 "uniques": [
-                    "[+2 Production, +2 Food, +2 Gold] from every [Fishing Boats]",
-                ],
-                "requires": ["Naval Tradition","Maritime Infrastructure"],
-                "row": 2,
-                "column": 2
-            },
-            {
-                "name": "Navigation School",
-                "uniques": [
-                    "[Great General] units gain the [Great Admiral] promotion",
-                    "Free [Great General] appears"
-
+		    "[+1 Gold] from every [Camp]",
+		    "[+1 Gold] from every [Pasture]",
+		    "[+1 Gold] from every [Plantation]",
+		    "[+3 Culture] from every [Citadel]",
                 ],
                 "requires": ["Naval Tradition"],
                 "row": 2,
                 "column": 4
             },
             {
+                "name": "Navigation School",
+                "uniques": [
+		    "[Great General] units gain the [Great Admiral] promotion",
+		    "Free [Great General] appears",
+		    "[Great General] is earned [25]% faster",
+                ],
+                "requires": ["Maritime Infrastructure","Naval Tradition"],
+                "row": 2,
+                "column": 2
+            },
+            {
                 "name": "Colonialism",
                 "uniques": [
-                    "[+2] population [in all cities] <on foreign continents>",
-                    "[+2 Happiness] [in all cities] <on foreign continents>",
+                    "[+15]% [Science] [in puppeted cities]",
+		    "[+15]% [Culture] [in puppeted cities]",
+		    "[+15]% [Gold] [in puppeted cities]",
                 ],
                 "requires": ["Merchant Navy"],
                 "row": 3,
-                "column": 3
+                "column": 4
             },
             {
                 "name": "Exploration Complete",
                 "uniques": [
-                    "Empire enters golden age",
-		    "May buy [{Military} {Water} {non-[Mercenary]}] units with [Faith] for [2] times their normal Production cost <starting from the [Industrial era]>",
+		    "[+15]% Strength <for [Melee Water] units> <when adjacent to a [Great General] unit>",
+		    "May buy [{Military} {Water}] units with [Faith] for [2] times their normal Production cost <starting from the [Industrial era]>",
                 ]
             }
         ]
@@ -577,28 +589,28 @@
         "priorities": {
             "Neutral": 10,
             "Cultural": 20,
-            "Diplomatic": 20,
-            "Domination": 20,
+            "Diplomatic": 10,
+            "Domination": 10,
             "Scientific": 60
         },
         "uniques": [
-            "[+10]% [Science] <while the empire is happy>"
+            "[+10]% [Science] <while the empire is happy>",
                 ],
         "policies": [
             {
                 "name": "Secularism",
                 "uniques": [
-                    "[+2 Science] from every specialist [in all cities]"
+		    "[+1 Science] from every specialist [in all cities]",
+		    "[Great Scientist] is earned [25]% faster",
                 ],
                 "row": 1,
-                "column": 5
+                "column": 4
             },
             {
                 "name": "Humanism",
                 "uniques": [
                     "[+1 Happiness] from every [University]",
-                    "[+1 Happiness] from every [Public School]",
-		    "[Great Scientist] is earned [25]% faster"
+		    "[+1 Happiness] from every [Public School]",
                 ],
                 "row": 1,
                 "column": 2
@@ -606,26 +618,29 @@
             {
                 "name": "Free Thought",
                 "uniques": [
-                    "[+1 Science] from every [Trading post]",
+		    "[+1 Science] from every [Lumber mill]",
+		    "[+1 Science] from every [Mine] <in tiles without [resource]>",
                     "[+17]% [Science] from every [University]"
                 ],
                 "requires": ["Humanism"],
                 "row": 2,
-                "column": 1
+                "column": 2
             },
             {
                 "name": "Sovereignty",
-                "uniques": ["[+1 Gold] from all [Science] buildings"],
-                "requires": ["Secularism"],
+                "uniques": [
+		    "[+1 Gold] from all [Science] buildings",
+		],
+		"requires": ["Secularism"],
                 "row": 2,
-                "column": 5
+                "column": 4
             },
             {
                 "name": "Scientific Revolution",
-                "uniques": ["Science gained from research agreements [+50]%"],
+                "uniques": ["Science gained from research agreements [+33]%"],
                 "requires": ["Free Thought"],
                 "row": 3,
-                "column": 1
+                "column": 2
             },
             {
                 "name": "Rationalism Complete",
@@ -652,44 +667,55 @@
             "Only available <before adopting [Order]>"
         ],
         "policies": [
-            {
+	    {
                 "name": "Constitution",
-                "uniques": ["[-50]% Unhappiness from [Specialists] [in all cities]"],
+                "uniques": [		
+		    "[+2 Culture] from every specialist [in all cities]",
+		],
                 "row": 1,
                 "column": 1
             },
             {
                 "name": "Universal Suffrage",
-                "uniques": ["[+33]% Strength for cities"],
+                "uniques": [
+		    "[+100]% Production when constructing [Hospital] buildings [in all cities]",
+		    "[+1 Gold] from every [Farm] <in cities with a [Hospital]>"
+                ],
                 "row": 1,
                 "column": 3
             },
-            {
+	    {
                 "name": "Civil Society",
                 "uniques": [
-                    "[-50]% Food consumption by specialists [in all cities]"
-                ],
+		    "[-50]% Food consumption by specialists [in all cities]",
+		],
                 "row": 1,
                 "column": 5
             },
             {
+                "name": "Democracy",
+                "uniques": [
+		    "[-50]% Unhappiness from [Specialists] [in all cities]",
+		    "[+25]% Golden Age length"
+	    	],
+		"requires": ["Civil Society"],
+                "row": 2,
+                "column": 5
+            },
+	    {
                 "name": "Free Speech",
-                "uniques": ["[+1 Culture] from every [Wonder]"],
-                "requires": ["Constitution"],
+                "uniques": [
+		    "[+25]% Strength for cities",
+		    "[6] units cost no maintenance"  
+		],
+		"requires": ["Constitution"],
                 "row": 2,
                 "column": 1
             },
             {
-                "name": "Democracy",
-                "uniques": ["[+1 Production] from every [Specialist]"],
-                "requires": ["Civil Society"],
-                "row": 2,
-                "column": 5
-            },
-            {
                 "name": "Freedom Complete",
                 "uniques": [
-                    "[+100]% Yield from every [Great Improvement]"
+                    "[+100]% Yield from every [Great Improvement]",
                 ]
             }
         ]
@@ -699,10 +725,10 @@
         "era": "Industrial era",
         "priorities": {
             "Neutral": 50,
-            "Cultural": 40,
+            "Cultural": 50,
             "Diplomatic": 40,
-            "Domination": 80,
-            "Scientific": 40
+            "Domination": 60,
+            "Scientific": 50
         },
         "uniques": [
             "[-33]% maintenance costs <for [All] units>",
@@ -713,15 +739,17 @@
         "policies": [
             {
                 "name": "Populism",
-                "uniques": ["[+25]% Strength <for [Wounded] units>"],
+                "uniques": [		    
+		    "[+1 Gold, +2 Science] from every [Strategic resource]",
+		    "Quantity of strategic resources produced by the empire +[100]%"
+	        ],
                 "row": 1,
                 "column": 2
             },
             {
                 "name": "Militarism",
                 "uniques": [
-                    "[Gold] cost of purchasing [Military] units [-33]%",
-		    "Quantity of strategic resources produced by the empire +[50]%",
+		    "[Gold] cost of purchasing [Military] units [-33]%",
 		],
                 "row": 1,
                 "column": 4
@@ -729,8 +757,8 @@
             {
                 "name": "Fascism",
                 "uniques": [
-		    "[+3] Movement <for [Great General] units>",
-                    "[+1] Movement <for [Armored] units>",
+		    "[+3] Movement <for [Great General] units> <when [non-[Embarked]]>",
+                    "[Armored] units gain the [Lightning Warfare] promotion",
 		    "[+15]% Strength <for [Armored] units> <when adjacent to a [Great General] unit>"
                 ],
                 "requires": ["Populism", "Militarism"],
@@ -773,12 +801,13 @@
         "priorities": {
             "Neutral": 50,
             "Cultural": 40,
-            "Diplomatic": 60,
+            "Diplomatic": 50,
             "Domination": 50,
-            "Scientific": 50
+            "Scientific": 60
         },
         "uniques": [
-            "[+2 Happiness] from every [Monument]",
+            "[+1 Culture, +1 Happiness] from every [Monument]",
+	    "Gain a free [Monument] [in all cities]",
             "Only available <before adopting [Autocracy]>",
             "Only available <before adopting [Freedom]>"
         ],
@@ -786,9 +815,9 @@
             {
                 "name": "United Front",
                 "uniques": [
-                    "Influence of all other civilizations with all city-states degrades [33]% faster",
-                    "Triggers the following global alert: [Our influence with City-States has started dropping faster!]"
-                ],
+		    "[+1 Happiness] from every [Workshop]",
+		    "[+1 Happiness] from every [Factory]",
+		],
                 "row": 1,
                 "column": 1
             },
@@ -805,7 +834,7 @@
                 "name": "Nationalism",
                 "uniques": [
                     "[+15]% Strength <for [All] units> <when fighting in [Friendly Land] tiles>"
-                ],
+		]
                 "row": 1,
                 "column": 5
             },
@@ -813,7 +842,8 @@
                 "name": "Socialism",
                 "requires": ["Planned Economy"],
                 "uniques": [
-                    "[-25]% maintenance cost for buildings [in all cities]"
+		    "[Gold] cost of purchasing [All] buildings [-25]%",
+		    "[-10]% maintenance cost for buildings [in all cities]"
                 ],
                 "row": 2,
                 "column": 3
@@ -822,7 +852,8 @@
                 "name": "Communism",
                 "requires": ["Socialism"],
                 "uniques": [
-                    "[+2 Production] [in all cities]",
+                    "[+3 Science] [in all cities]",
+		    "[+1 Production] from every [Lumber mill]",
                     "[+1 Production] from every [Mine]",
                     "[+1 Production] from every [Quarry]"
                 ],
@@ -832,9 +863,9 @@
             {
                 "name": "Order Complete",
                 "uniques": [
-                    "[+2 Food, +2 Production, +2 Science, +2 Gold, +2 Culture] [in all cities]"
+                    "[+2 Food, +2 Production, +2 Culture, +2 Science, +2 Gold] [in all cities]"
 		]
             }
         ]
     },
-]
+		    ]
