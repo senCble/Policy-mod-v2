@@ -7,14 +7,14 @@
         "priorities": {
             "Neutral": 0,
             "Cultural": 20,
-            "Diplomatic": 20,
+            "Diplomatic": 20
             "Domination": 0,
             "Scientific": 0
         },
         "uniques": [
-            "[+3 Culture] [in capital]",
+            "[+3 Culture] [in capital]"
             "Only available <before adopting [Liberty]>"
-        ],
+        ]
         "policies": [
             {
                 "name": "Legalism",
