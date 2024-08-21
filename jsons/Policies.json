@@ -2,7 +2,7 @@
 //Name|Neutral|Culture|Diplomatic|Domination|Scientific
 
     {
-        "name": "Tradition",
+        "name": "Tradition"
         "era": "Ancient era",
         "priorities": {
             "Neutral": 0,
